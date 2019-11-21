@@ -58,10 +58,21 @@ function streamium_get_template_url($template){
 function streamium_output_mrss_feed($admin_bar){
 
     $rokuUrl = streamium_get_template_url('mrss.php');
-    if(get_theme_mod('streamium_mrss_key', false)){
-        $rokuUrl = $rokuUrl . '?key=' . get_theme_mod('streamium_mrss_key');
-    }
 
+    if(empty($rokuUrl)){
+        
+        $rokuUrl = 'https://s3bubble.com/you-have-not-created-a-roku-or-firetv-template/';
+
+    }else{
+
+        if(get_theme_mod('streamium_mrss_key', false)){
+            
+            $rokuUrl = $rokuUrl . '?key=' . get_theme_mod('streamium_mrss_key');
+        
+        }
+    
+    }
+    
     $fireTvUrl = streamium_get_template_url('mrss-xml.php');
 
     $admin_bar->add_menu( array(
