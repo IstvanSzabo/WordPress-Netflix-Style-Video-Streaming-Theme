@@ -8,7 +8,7 @@
 	
 	$title = get_bloginfo('name');
 	$link = get_site_url();
-	$description  = html_entity_decode(get_bloginfo('description'), null, "UTF-8");
+	$description  = get_bloginfo('description');
 	$lang = "en-us";
 	$copyright = "Copyright 2019 S3Bubble";
 	$builddate = date(DATE_RFC2822);
@@ -19,17 +19,17 @@
 	print('<?xml version="1.0" encoding="UTF-8"?>');
 	print('<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">');
 	print('<channel>');
-	print('<title>'. $title . '</title>');
+	print('<title><![CDATA['. $title . ']]></title>');
 	print('<link>'. $link . '</link>');
 	print('<description><![CDATA['. $description . ']]></description>');
-	print('<language>'. $lang . '</language>');
-	print('<copyright>'. $copyright . '</copyright>');
+	print('<language><![CDATA['. $lang . ']]></language>');
+	print('<copyright><![CDATA['. $copyright . ']]></copyright>');
 	print('<lastBuildDate>'. $builddate . '</lastBuildDate>');
 
 	print('<image>');	
 				
 		print('<link>'. $link . '</link>');
-		print('<title>'. $title . '</title>');
+		print('<title><![CDATA['. $title . ']]></title>');
 		print('<url>'. esc_url(get_theme_mod_ssl('streamium_logo')) . '</url>');
 		print('<description><![CDATA['. $description . ']]></description>');
 		print('<height>114</height>');
@@ -113,7 +113,7 @@
 				$categories = get_the_terms($post->ID, get_theme_mod('streamium_section_input_taxonomy_' . $tax, $tax));
 				if ( ! empty( $categories ) ) {
 					foreach( $categories as $category ) {
-						print('<media:category>' . $category->name . '</media:category>');
+						print('<media:category><![CDATA['. $category->name . ']]></media:category>');
 					} 
 				}				 
 			
