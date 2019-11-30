@@ -10985,6 +10985,10 @@ html, body {
     background: #141414;
 }
 
+body.full-movie {
+    height: 100%;
+}
+
 .streamium-tile-btns {
    background-color: rgba(51, 51, 51, 0.4);
     padding: 10px 20px;

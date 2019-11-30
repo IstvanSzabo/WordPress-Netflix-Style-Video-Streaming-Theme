@@ -6792,7 +6792,8 @@ jQuery(document).ready(function($) {
 					poster : video_post_object.poster,
 				},
 				options : {
-					fluid : false
+					fluid : true,
+					aspect : 'none'
 				},
 				meta : {
 					showSocial: video_post_object.brand_social,
