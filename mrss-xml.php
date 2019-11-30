@@ -8,7 +8,7 @@
 	
 	$title = get_bloginfo('name');
 	$link = get_site_url();
-	$description  = get_bloginfo('description');
+	$description  = html_entity_decode(get_bloginfo('description'), null, "UTF-8");
 	$lang = "en-us";
 	$copyright = "Copyright 2019 S3Bubble";
 	$builddate = date(DATE_RFC2822);
@@ -84,7 +84,7 @@
 			    print('<item>');	
 				
 				print('<title>');
-				print_r($title);
+				print_r('<![CDATA['. $title . ']]>');
 				print('</title>');	
 
 				print('<pubDate>');
@@ -96,7 +96,7 @@
 				print('</link>');
 			
 				print('<description>');
-				print_r($shortDescription);
+				print_r('<![CDATA['. $shortDescription . ']]>');
 				print('</description>');
 
 				print('<guid isPermaLink="false">' . $link . '</guid>');
@@ -118,8 +118,8 @@
 				}				 
 			
 				print('<media:content url="' . $videoUrl . '" language="en-us" duration="' . $videoDuration . '.0" medium="video" isDefault="true">');
-					print('<media:title type="plain">' . $title . '</media:title>');
-					print('<media:description type="html">' . $shortDescription . '</media:description>');
+					print('<media:title type="plain"><![CDATA['. $title . ']]></media:title>');
+					print('<media:description type="html"><![CDATA['. $shortDescription . ']]></media:description>');
 					print('<media:thumbnail url="' . $thumbnail . '" />');
 					print('<media:credit role="author" scheme="urn:ebu">Amazon</media:credit>');
 					print('<media:copyright url="https://creativecommons.org/licenses/by/4.0/"/>');				
