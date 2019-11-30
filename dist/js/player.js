@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
 					poster : video_post_object.poster,
 				},
 				options : {
-					fluid : true
+					fluid : false
 				},
 				meta : {
 					showSocial: video_post_object.brand_social,
@@ -137,7 +137,7 @@ jQuery(document).ready(function($) {
 	    	s3bubble("s3bubble-" + video_post_object.post_id).video(options, function(player) {
 
 	    		// AUTO PLAY EACH VIDEO::
-	        	player.on("canplaythrough", function() {
+	        	player.on("loadedmetadata", function() {
 
 	        		if(this.s3s.options.vpaid){
 			        	// The browser prevented playback initiated without user interaction.
@@ -145,7 +145,7 @@ jQuery(document).ready(function($) {
 			        	player.play();
 			        }
 
-		        });
+		        }); 
 
 	        	player.on("timeupdate", function() {
 
