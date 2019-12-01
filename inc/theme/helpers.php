@@ -327,11 +327,13 @@ function orderCodes($postId) {
 
   $codes = [];
   foreach ($firstSort as $key => $flatten) {
+
     foreach ($flatten as $key => $value) {
       
-      $codes[] = (isset($value['service']) && $value['service'] != '') ? $value['service'] : $value['codes'];
+        $codes[] = (isset($value['service']) && $value['service'] != '') ? $value['service'] : $value['codes'];
 
     }
+  
   }
 
   return array(
@@ -352,7 +354,9 @@ function ssl_post_thumbnail_urls($url, $post_id) {
 
   //Skip file attachments
   if(!wp_attachment_is_image($post_id)) {
+        
     return $url;
+
   }
 
   //Correct protocol for https connections
@@ -386,6 +390,7 @@ function streamium_body_class( $classes ) {
     }
 
     return $classes;
+    
 }
 add_action( 'body_class', 'streamium_body_class');
 
