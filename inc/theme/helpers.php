@@ -240,12 +240,19 @@ function partition(Array $list, $p) {
  * @return streamGroupSeasons:
  */
 function streamGroupSeasons($array, $key) {
+    
     $return = array();
+    
     foreach($array as $val) {
+    
         $return[$val[$key]][] = $val;
+    
     }
+    
     ksort($return);
+    
     return $return;
+
 }
 
 /**
@@ -358,19 +365,27 @@ function get_theme_mod_ssl($mod_name){
 function streamium_sort_episodes($episodes){
     
     $positions = array();
+
     foreach ($episodes as $key => $row){
+    
         $positions[$key] = $row['positions'];
+    
     }
+    
     array_multisort($positions, SORT_ASC, $episodes);
 
     $response = array();
+    
     foreach ($episodes as $v) { 
 
         $seasons = $v['seasons'];
+    
         if (!isset($response[$seasons])) $response[$seasons] = array();
+    
         //$v['link'] = get_permalink($postId);
+    
         $response[$seasons][] = $v;
-        
+
     }
     
     return $response;
