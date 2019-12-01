@@ -364,7 +364,7 @@ function streamium_sort_episodes($episodes){
     array_multisort($positions, SORT_ASC, $episodes);
 
     $response = array();
-    foreach ($episodes as $v) {
+    foreach ($episodes as $v) { 
       print_r($v);
         $seasons = $v['seasons'];
         if (!isset($response[$seasons])) $response[$seasons] = array();
