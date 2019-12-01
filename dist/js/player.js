@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
 				        },
 				        success: function(response) {
 
-				        	setTimeout(updateResumePercentage, 5000);
+				        	setTimeout(updateResumePercentage, 15000);
 
 				        }
 				    }); // end jquery 

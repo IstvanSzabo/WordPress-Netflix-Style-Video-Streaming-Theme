@@ -477,7 +477,9 @@ function streamium_post_meta_box_save( $post_id )
         update_post_meta($post_id, 's3bubble_roku_duration_meta_box_text', $_POST['s3bubble_roku_duration_meta_box_text']);
     }
 
-    if(!empty($_POST['s3bubble_roku_captions_meta_box_text'])){
+    if(empty($_POST['s3bubble_roku_captions_meta_box_text'])){
+        update_post_meta($post_id, 's3bubble_roku_captions_meta_box_text', null);
+    }else{
         update_post_meta($post_id, 's3bubble_roku_captions_meta_box_text', $_POST['s3bubble_roku_captions_meta_box_text']);
     }
 

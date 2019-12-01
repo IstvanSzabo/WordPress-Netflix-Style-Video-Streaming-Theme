@@ -158,7 +158,16 @@ jQuery( document ).ready(function( $ ) {
                         $('#s3bubble_roku_url_meta_box_text').val(response.source.url);
                         $('#s3bubble_roku_quality_meta_box_text').val(response.source.quality);
                         $('#s3bubble_roku_videotype_meta_box_text').val(response.source.videoType);
-                        $('#s3bubble_roku_captions_meta_box_text').val(response.captions);
+
+                        if(response.captions.length > 0){
+
+                            $('#s3bubble_roku_captions_meta_box_text').val(response.captions);
+                        
+                        }else{
+                        
+                            $('#s3bubble_roku_captions_meta_box_text').val("");
+                        
+                        }
 
                         // Tell the user about image needed and duration
                         alert("Data successfully generated. !Important you will need to manually enter the video duration and please make sure you have added a Roku thumbnail 16:9 at least 800x450 in the thumbnail section below.");
