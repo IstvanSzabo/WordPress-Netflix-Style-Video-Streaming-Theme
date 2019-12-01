@@ -365,11 +365,12 @@ function streamium_sort_episodes($episodes){
 
     $response = array();
     foreach ($episodes as $v) { 
-      print_r($v);
+
         $seasons = $v['seasons'];
         if (!isset($response[$seasons])) $response[$seasons] = array();
-        $v['link'] = get_permalink($postId);
+        //$v['link'] = get_permalink($postId);
         $response[$seasons][] = $v;
+        
     }
     
     return $response;
