@@ -7,9 +7,13 @@
  * @author  @sameast
  */
 if ( ! function_exists ( 's3bubble_tile_count' ) ) {
+    
     function s3bubble_tile_count() {
+    
         return (int) get_theme_mod( 'streamium_tile_count', 6 );
+    
     }
+
 }
 
 /**
@@ -19,8 +23,11 @@ if ( ! function_exists ( 's3bubble_tile_count' ) ) {
  * @author  @sameast
  */
 function streamium_register_menu() {
+    
     register_nav_menu('streamium-header-menu',__( 'Header Menu', 'streamium' ));
+
 }
+
 add_action( 'init', 'streamium_register_menu' );
 
 /**
@@ -30,8 +37,11 @@ add_action( 'init', 'streamium_register_menu' );
  * @author  @sameast
  */
 function streamium_remove_ul( $menu ){
+    
     return preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
+
 }
+
 add_filter( 'wp_nav_menu', 'streamium_remove_ul' );
 
 /**
@@ -41,19 +51,25 @@ add_filter( 'wp_nav_menu', 'streamium_remove_ul' );
  * @author  @sameast
  */
 if ( ! function_exists ( 'streamium_check_webview' ) ) {
+    
     function streamium_check_webview() {
 
         if (isset($_GET['webview']) || isset($_COOKIE["webview"])) {
             
             setcookie('webview', true);
+            
             wp_enqueue_style('streamium-webview', get_template_directory_uri() . '/production/css/webview.min.css', array(), s3bubble_cache_version());
 
         }else{
+            
             unset($_COOKIE['webview']);
+
         }
 
     }
+
     //add_action( 'init', 'streamium_check_webview' );
+
 }
 
 /*
@@ -141,10 +157,15 @@ add_action( 'admin_init', 'streamium_check_for_active_plugins' );
  * @author  @sameast
  */
 if ( ! function_exists ( 'streamium_flush_rewrite_rules' ) ) {
+    
     function streamium_flush_rewrite_rules(){
+    
         flush_rewrite_rules();
+    
     }
+    
     add_action( 'admin_init', 'streamium_flush_rewrite_rules' );
+
 }
 
 /**
@@ -157,11 +178,16 @@ function streamium_get_device($type){
 
 	// include classes
  	if( wp_is_mobile() ){
-	 	$device = array('count' => 2);
-	}else{
-		$device = array('count' => 6);
-	}
-	return $device[$type];
+	
+     	$device = array('count' => 2);
+	
+    }else{
+	
+    	$device = array('count' => 6);
+	
+    }
+	
+    return $device[$type];
 
 }
 
@@ -172,7 +198,9 @@ function streamium_get_device($type){
  * @author  @sameast
  */
 function streamium_search_distinct() {
-	return "wp_posts.*, COUNT(wp_streamium_reviews.post_id) AS reviews";
+	
+    return "wp_posts.*, COUNT(wp_streamium_reviews.post_id) AS reviews";
+
 }
 
 /**
@@ -182,10 +210,15 @@ function streamium_search_distinct() {
  * @author  @sameast
  */
 function streamium_search_join($join) {
+    
     global $wpdb;
+    
     $posts_stats_view_join = "LEFT JOIN wp_streamium_reviews ON ($wpdb->posts.ID = wp_streamium_reviews.post_id)";
+    
     $join .= $posts_stats_view_join;
+    
     return $join;
+
 }
 
 /**
@@ -195,9 +228,13 @@ function streamium_search_join($join) {
  * @author  @sameast
  */
 function streamium_search_groupby($groupby) {
+    
     global $wpdb;
+    
     $groupby = "wp_streamium_reviews.post_id";
+    
     return $groupby;
+
 }
 
 /**
@@ -207,9 +244,13 @@ function streamium_search_groupby($groupby) {
  * @author  @sameast
  */
 function streamium_search_orderby($orderby_statement) {
-	global $wpdb;
-	$orderby_statement = "reviews DESC";
-	return $orderby_statement;
+	
+    global $wpdb;
+	
+    $orderby_statement = "reviews DESC";
+	
+    return $orderby_statement;
+
 }
 
 /**
@@ -220,17 +261,29 @@ function streamium_search_orderby($orderby_statement) {
  * @link http://www.php.net/manual/en/function.array-chunk.php#75022
  */
 function partition(Array $list, $p) {
+    
     $listlen = count($list);
+    
     $partlen = floor($listlen / $p);
+    
     $partrem = $listlen % $p;
+    
     $partition = array();
+    
     $mark = 0;
+    
     for($px = 0; $px < $p; $px ++) {
+    
         $incr = ($px < $partrem) ? $partlen + 1 : $partlen;
+    
         $partition[$px] = array_slice($list, $mark, $incr);
+    
         $mark += $incr;
+    
     }
+    
     return $partition;
+
 }
 
 /**
