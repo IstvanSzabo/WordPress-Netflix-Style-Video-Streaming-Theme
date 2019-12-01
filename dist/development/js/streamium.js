@@ -6795,7 +6795,7 @@ jQuery(document).ready(function($) {
 					fluid : true,
 					aspect : 'none'
 				},
-				meta : {
+				meta : { 
 					showSocial: video_post_object.brand_social,
 	                backButton: true,
 	                backButtonUrl: video_post_object.back,
