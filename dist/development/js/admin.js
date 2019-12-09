@@ -1286,7 +1286,7 @@ jQuery(document).ready(function($) {
                         obj.set( data.key );
                     });
                     alert('Key generated! Make sure you publish this update!');
-                }
+                } 
             },
             error: function(err) {
                 console.log(err);

@@ -282,7 +282,13 @@ jQuery( document ).ready(function( $ ) {
                             
         },'json').fail(function(e){
 
-           alert('Unkown error please contact support!');
+            var r = confirm('You have not added your website in the S3Bubble dashboard https://s3bubble.com/app/#/wpwebsites click to go there now!');
+            if (r == true) {
+
+                var win = window.open('https://s3bubble.com/app/#/wpwebsites', '_blank');
+                win.focus();
+
+            } 
         
         });
 
