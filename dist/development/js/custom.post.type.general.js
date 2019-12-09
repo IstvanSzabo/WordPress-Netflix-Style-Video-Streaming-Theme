@@ -227,7 +227,6 @@ jQuery( document ).ready(function( $ ) {
 
             // Tell the user about image needed and duration
             alert("Data successfully generated. !Important you will need to manually enter the video duration and please make sure you have added a Roku thumbnail 16:9 at least 800x450 in the thumbnail section below.");
-            
                              
         },'json').fail(function(e){
 

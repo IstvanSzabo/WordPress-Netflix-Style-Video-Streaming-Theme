@@ -1,6 +1,43 @@
 <?php
 
 /**
+ * Dummy data admin notice
+ *
+ * @return null
+ * @author  @sameast
+ */
+function streamium_dummy_data_notice() {
+   
+        if ( ! get_option('dismissed-streamium_dummy_data', FALSE ) ) { ?>
+            <div class="updated notice notice-streamium-dummy-data is-dismissible" data-notice="streamium_dummy_data">
+                <p>NEED HELP? Why not get started with some dummy data download below (Right Click And Save Link As) if needed. You can import the xml file in the tools menu -> import then Run Importer.</p> 
+                <p>
+                    <a class="button button-primary" href="https://s3b-assets-bucket.s3.amazonaws.com/animals.WordPress.2019-12-09.xml" target="_blank">Dummy Data</a>
+                </p>
+            </div>
+        <?php }
+    
+}
+
+add_action( 'admin_notices', 'streamium_dummy_data_notice' );
+
+/**
+ * AJAX Dummy data admin notice
+ *
+ * @return null
+ * @author  @sameast
+ */
+function ajax_notice_streamium_dummy_data() {
+
+    $type = $_POST['type'];
+    update_option( 'dismissed-' . $type, TRUE );
+
+}
+
+add_action( 'wp_ajax_dismissed_notice_streamium_dummy_data', 'ajax_notice_streamium_dummy_data' );
+  
+
+/**
  * Changes the tile count
  *
  * @return null
