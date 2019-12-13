@@ -22,15 +22,14 @@
 
 		}
 		
-
 ?>
 	
 		<section class="full-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(<?php echo esc_url( $image ); ?>)">
-			<a class="btn btn-primary home-join-signin" href="<?php echo $accountPage; ?>">SIGN IN</a>
+			<a class="btn btn-primary home-join-signin" href="<?php echo $accountPage; ?>"><?php _e( 'SIGN IN', 'streamium' ); ?></a>
 	        <div class="full-hero-inner">
 	            <h1><?php the_title(); ?></h1>
 	            <p><?php the_content(); ?></p>
-	            <a href="<?php echo $shopPage; ?>" class="btn btn-primary btn-lg">JOIN FOR A MONTH FOR FREE</a>
+	            <a href="<?php echo $shopPage; ?>" class="btn btn-primary btn-lg"><?php _e( 'JOIN FOR A MONTH FOR FREE', 'streamium' ); ?></a>
 	        </div>
 	    </section>
 
