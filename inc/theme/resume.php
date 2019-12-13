@@ -25,7 +25,7 @@ function streamium_create_resume() {
     	echo json_encode(
 	    	array(
 	    		'error' => true,
-	    		'message' => 'You must be logged in to view reviews' 
+	    		'message' => 'You must be logged in' 
 	    	)
 	    );
 
