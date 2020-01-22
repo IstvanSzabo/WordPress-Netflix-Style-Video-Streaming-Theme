@@ -91,7 +91,7 @@ You can edit files in the dist folder please submit your pull requests
 
 ## WOOCOMMERCE REST API CAllS
 
-Important for calls that require authentication go to Woocommerce -> Settings -> Advanced -> Rest API and create a key.
+Important for calls that require authentication go to Woocommerce -> Settings -> Advanced -> Rest API and create a key. Woocommerce docs [https://woocommerce.github.io/woocommerce-rest-api-docs/](https://woocommerce.github.io/woocommerce-rest-api-docs/) 
 
 * [wp-json/wc/v2/orders?consumer_key=ck_999&consumer_secret=cs_999](https://streamiumtheme.com/wp-json/wc/v2/orders?consumer_key=ck_999&consumer_secret=cs_999) - GET Woocommerce orders
 
