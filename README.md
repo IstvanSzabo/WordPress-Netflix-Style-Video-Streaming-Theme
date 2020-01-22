@@ -75,12 +75,19 @@ You can edit files in the dist folder please submit your pull requests
 * [api/wp/v2/movie](https://streamiumtheme.com/api/wp/v2/movie) - GET Movie posts
 * [api/wp/v2/movie?movies=2](https://streamiumtheme.com/api/wp/v2/movie?movies=2) - GET Movie posts in category 2
 * [api/wp/v2/tv](https://streamiumtheme.com/api/wp/v2/tv) - GET TV posts
+* [api/wp/v2/tv?programs=52](https://streamiumtheme.com/api/wp/v2/tv?programs=52) - GET TV posts in category 52
 * [api/wp/v2/kid](https://streamiumtheme.com/api/wp/v2/kid) - GET Kid posts
+* [api/wp/v2/kid?kids=54](https://streamiumtheme.com/api/wp/v2/kid?kids=54) - GET Kid posts in category 54
 * [api/wp/v2/stream](https://streamiumtheme.com/api/wp/v2/stream) - GET Stream posts
+* [api/wp/v2/stream?streams=54](https://streamiumtheme.com/api/wp/v2/stream?streams=54) - GET Stream posts in category 54
 * [api/wp/v2/extra1](https://streamiumtheme.com/api/wp/v2/extra1) - GET Extra1 posts
-* [api/wp/v2/extra2](https://streamiumtheme.com/api/wp/v2/extra2) - GET Extra1 posts
-* [api/wp/v2/extra3](https://streamiumtheme.com/api/wp/v2/extra3) - GET Extra1 posts
-* [api/wp/v2/extra4](https://streamiumtheme.com/api/wp/v2/extra4) - GET Extra1 posts
+* [api/wp/v2/extra1?extras1=54](https://streamiumtheme.com/api/wp/v2/extra1?extras1=54) - GET Extra1 posts in category 54
+* [api/wp/v2/extra2](https://streamiumtheme.com/api/wp/v2/extra2) - GET Extra2 posts
+* [api/wp/v2/extra2?extras2=54](https://streamiumtheme.com/api/wp/v2/extra2?extras2=54) - GET Extra2 posts in category 54
+* [api/wp/v2/extra3](https://streamiumtheme.com/api/wp/v2/extra3) - GET Extra3 posts
+* [api/wp/v2/extra3?extras3=54](https://streamiumtheme.com/api/wp/v2/extra3?extras3=54) - GET Extra3 posts in category 54
+* [api/wp/v2/extra4](https://streamiumtheme.com/api/wp/v2/extra4) - GET Extra4 posts
+* [api/wp/v2/extra4?extras4=54](https://streamiumtheme.com/api/wp/v2/extra4?extras4=54) - GET Extra5 posts in category 54
 
 ## Change Log
 
