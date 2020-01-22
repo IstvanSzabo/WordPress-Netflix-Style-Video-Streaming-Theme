@@ -89,7 +89,7 @@ You can edit files in the dist folder please submit your pull requests
 * [wp-json/wp/v2/extra4](https://streamiumtheme.com/wp-json/wp/v2/extra4) - GET Extra4 posts
 * [wp-json/wp/v2/extra4?extras4=54](https://streamiumtheme.com/wp-json/wp/v2/extra4?extras4=54) - GET Extra5 posts in category 54
 
-## WOOCOMERCE REST API CAllS
+## WOOCOMMERCE REST API CAllS
 
 Important for calls that require authentication go to Woocommerce -> Settings -> Advanced -> Rest API and create a key.
 
