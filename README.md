@@ -70,6 +70,10 @@ grunt
 
 You can edit files in the dist folder please submit your pull requests
 
+## REST API CAllS
+
+[api/wp/v2/movie](https://streamiumtheme.com/api/wp/v2/movie) - GET Movie posts
+
 ## Change Log
 
 All Changes can be reviewed on our releases page
