@@ -6,18 +6,6 @@
  * @return null
  * @author  @sameast
  */
-function streamium_api_prefix() {
-    return "api";
-}
-//add_filter( 'rest_url_prefix', 'streamium_api_prefix');
-flush_rewrite_rules(true);
-
-/**
- * Update the Wordpress api url prefix
- *
- * @return null
- * @author  @sameast
- */
 function streamium_api_add_series_init() {
 
 	$post_types = get_post_types( array( 'public' => true ), 'objects' );
