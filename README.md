@@ -95,6 +95,10 @@ Important for calls that require authentication go to Woocommerce -> Settings ->
 
 * [wp-json/wc/v2/orders?consumer_key=ck_999&consumer_secret=cs_999](https://streamiumtheme.com/wp-json/wc/v2/orders?consumer_key=ck_999&consumer_secret=cs_999) - GET Woocommerce orders
 
+## USER REST API CAllS
+
+To authenticate a user we suggest using this plugin. [https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/) 
+
 ## Change Log
 
 All Changes can be reviewed on our releases page
