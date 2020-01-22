@@ -9,7 +9,7 @@
 function streamium_api_prefix() {
     return "api";
 }
-add_filter( 'rest_url_prefix', 'streamium_api_prefix');
+//add_filter( 'rest_url_prefix', 'streamium_api_prefix');
 flush_rewrite_rules(true);
 
 /**
