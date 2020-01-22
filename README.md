@@ -73,6 +73,13 @@ You can edit files in the dist folder please submit your pull requests
 ## REST API CAllS
 
 [api/wp/v2/movie](https://streamiumtheme.com/api/wp/v2/movie) - GET Movie posts
+[api/wp/v2/tv](https://streamiumtheme.com/api/wp/v2/tv) - GET TV posts
+[api/wp/v2/kid](https://streamiumtheme.com/api/wp/v2/kid) - GET Kid posts
+[api/wp/v2/stream](https://streamiumtheme.com/api/wp/v2/stream) - GET Stream posts
+[api/wp/v2/extra1](https://streamiumtheme.com/api/wp/v2/extra1) - GET Extra1 posts
+[api/wp/v2/extra2](https://streamiumtheme.com/api/wp/v2/extra2) - GET Extra1 posts
+[api/wp/v2/extra3](https://streamiumtheme.com/api/wp/v2/extra3) - GET Extra1 posts
+[api/wp/v2/extra4](https://streamiumtheme.com/api/wp/v2/extra4) - GET Extra1 posts
 
 ## Change Log
 
