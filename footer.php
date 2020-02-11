@@ -13,7 +13,7 @@
 					<?php endif; ?>
 				</div><!--/.col-sm-12-->
 			</div><!--/.row-->
-		</div><!--/.container-->
+		</div><!--/.container--> 
 	</footer>
 
 	<div class="streamium-review-panel from-right">
