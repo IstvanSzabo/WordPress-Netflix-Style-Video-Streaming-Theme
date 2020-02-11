@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: S3Bubble Streamium Pro Theme\n"
-"POT-Creation-Date: 2020-02-11 12:20+0000\n"
-"PO-Revision-Date: 2020-02-11 12:20+0000\n"
+"POT-Creation-Date: 2020-02-11 12:27+0000\n"
+"PO-Revision-Date: 2020-02-11 12:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,26 +23,29 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
 #: 404.php:9
+#, fuzzy
 msgid "Oops! That can&rsquo;t be found"
-msgstr "Oops! That can&rsquo;t be found"
+msgstr "Oops! Das kann man nicht finden"
 
 #: 404.php:10
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Wie es aussieht, wurde an dieser Stelle nichts gefunden. Möchtest Du danach "
+"suchen?"
 
 #: category.php:24 tag.php:32 taxonomy.php:32
 #, php-format
 msgid "Viewing: %s"
-msgstr "Viewing: %s"
+msgstr "Ansicht: %s"
 
 #: footer.php:21 inc/theme/reviews.php:248
 msgid "Reviews"
-msgstr "Reviews"
+msgstr "Bewertungen"
 
 #: forum.php:16 forum.php:28 page.php:16 page.php:28 single.php:39
 #: templates/plans-template.php:18
 msgid "Sorry, no posts matched your criteria."
-msgstr "Sorry, no posts matched your criteria."
+msgstr "Keine passenden Beiträge gefunden."
 
 #: functions.php:25
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2646
@@ -50,73 +53,82 @@ msgid "Version"
 msgstr "Version"
 
 #: functions.php:80
+#, fuzzy
 msgid "Smart TV App Feeds"
 msgstr "Smart TV App Feeds"
 
 #: functions.php:87
+#, fuzzy
 msgid "Open Roku Mrss Feed"
-msgstr "Open Roku Mrss Feed"
+msgstr "Öffnen Roku Mrss Feed"
 
 #: functions.php:95
+#, fuzzy
 msgid "Open Amazon FireTV Mrss Feed"
-msgstr "Open Amazon FireTV Mrss Feed"
+msgstr "Geöffnet Amazon FireTV Mrss Feed"
 
 #: functions.php:103
+#, fuzzy
 msgid "Download Example Brand Assets"
-msgstr "Download Example Brand Assets"
+msgstr "Beispiel Markenassets herunterladen"
 
 #: functions.php:168
 msgid "Page Sidebar"
-msgstr "Page Sidebar"
+msgstr "Seiten Sidebar"
 
 #: functions.php:178
 msgid "Post Sidebar"
-msgstr "Post Sidebar"
+msgstr "Beitragsseitenleiste"
 
 #: functions.php:187
 msgid "Forum Sidebar"
-msgstr "Forum Sidebar"
+msgstr "Forum Seitenleiste"
 
 #: functions.php:210
+#, fuzzy
 msgid "Video Tile"
-msgstr "Video Tile"
+msgstr "Video-Kachel"
 
 #: functions.php:211
+#, fuzzy
 msgid "Video Tile Expanded"
-msgstr "Video Tile Expanded"
+msgstr "Video-Kachel erweitert"
 
 #: functions.php:212
+#, fuzzy
 msgid "Video Tile Large Expanded"
-msgstr "Video Tile Large Expanded"
+msgstr "Video-Kachel Groß erweitert"
 
 #: functions.php:213
+#, fuzzy
 msgid "Multi Video Thumb"
-msgstr "Multi Video Thumb"
+msgstr "Multi-Video-Daumen"
 
 #: functions.php:214
 msgid "Main Slider"
-msgstr "Main Slider"
+msgstr "Haupt-Seitenleiste"
 
 #: functions.php:261 inc/theme/posts.php:231 templates/archive-slider.php:40
 #: templates/content-slider.php:38
 msgid "read more"
-msgstr "read more"
+msgstr "weiterlesen"
 
 #: functions.php:264
+#, fuzzy
 msgid "Continue Watching"
 msgstr "Continue Watching"
 
 #: functions.php:265
 msgid "Browse"
-msgstr "Browse"
+msgstr "Durchsuchen"
 
 #: functions.php:266
 msgid "Error"
-msgstr "Error"
+msgstr "Fehler"
 
 #: functions.php:267 inc/theme/posts.php:551
 msgid "Success"
-msgstr "Success"
+msgstr "Erfolg"
 
 #: functions.php:268
 msgid "Ok"
@@ -124,43 +136,47 @@ msgstr "Ok"
 
 #: functions.php:269
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Abbrechen"
 
 #: functions.php:270
+#, fuzzy
 msgid "Ok, got it!"
-msgstr "Ok, got it!"
+msgstr "Ok, hat es!"
 
 #: functions.php:271 inc/theme/reviews.php:244 inc/theme/reviews.php:246
 msgid "Review"
-msgstr "Review"
+msgstr "Bewertung"
 
 #: functions.php:272 functions.php:273
+#, fuzzy
 msgid "Please tell us why"
-msgstr "Please tell us why"
+msgstr "Bitte teilen Sie uns mit, warum"
 
 #: functions.php:274
+#, fuzzy
 msgid "Please enter over 30 characters and select rating!"
-msgstr "Please enter over 30 characters and select rating!"
+msgstr "Bitte geben Sie über 30 Zeichen ein und wählen Sie die Bewertung!"
 
 #: header.php:78 header.php:191
 msgid "Menu"
-msgstr "Menu"
+msgstr "Menü"
 
 #: header.php:81 taxonomy.php:38
 msgid "View All"
-msgstr "View All"
+msgstr "Alle anzeigen"
 
 #: header.php:100 header.php:140
 msgid "All"
-msgstr "All"
+msgstr "Alle"
 
 #: header.php:180
+#, fuzzy
 msgid "Add Menu (Location Header Menu)"
-msgstr "Add Menu (Location Header Menu)"
+msgstr "Menü hinzufügen (Location-Header-Menü)"
 
 #: header.php:190
 msgid "Search"
-msgstr "Search"
+msgstr "Suche"
 
 #: inc/api/cats.php:85 inc/api/cats.php:100 inc/api/custom.php:85
 #: inc/api/custom.php:100 inc/api/home.php:124 inc/api/home.php:139
@@ -168,7 +184,7 @@ msgstr "Search"
 #: inc/api/search.php:167 inc/api/tag.php:70 inc/api/tag.php:85
 #: inc/api/tax.php:171 inc/api/tax.php:186
 msgid "Available on"
-msgstr "Available on"
+msgstr "verfügbar auf"
 
 #: inc/api/cats.php:85 inc/api/cats.php:100 inc/api/custom.php:85
 #: inc/api/custom.php:100 inc/api/home.php:124 inc/api/home.php:139
@@ -176,47 +192,47 @@ msgstr "Available on"
 #: inc/api/search.php:167 inc/api/tag.php:70 inc/api/tag.php:85
 #: inc/api/tax.php:171 inc/api/tax.php:186
 msgid "plan"
-msgstr "plan"
+msgstr "Vertrag"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:334
 msgid "Install Required Plugins"
-msgstr "Install Required Plugins"
+msgstr "Erforderliche Plugins installieren"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:335
 msgid "Install Plugins"
-msgstr "Install Plugins"
+msgstr "Plugins installieren"
 
 #. translators: %s: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:337
 #, php-format
 msgid "Installing Plugin: %s"
-msgstr "Installing Plugin: %s"
+msgstr "Installiere Plugin: %s"
 
 #. translators: %s: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:339
 #, php-format
 msgid "Updating Plugin: %s"
-msgstr "Updating Plugin: %s"
+msgstr "Aktualisiere Plugin: %s"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:340
 msgid "Something went wrong with the plugin API."
-msgstr "Something went wrong with the plugin API."
+msgstr "Es ist ein Fehler mit der Plugin-API aufgetreten."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:343
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "This theme requires the following plugin: %1$s."
-msgstr[1] "This theme requires the following plugins: %1$s."
+msgstr[0] "Dieses Theme erfordert das folgende Plugin: %1$s."
+msgstr[1] "Dieses Theme erfordert die folgenden Plugins: %1$s."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:349
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "This theme recommends the following plugin: %1$s."
-msgstr[1] "This theme recommends the following plugins: %1$s."
+msgstr[0] "Dieses Theme empfiehlt das folgende Plugin: %1$s."
+msgstr[1] "Dieses Theme empfiehlt die folgenden Plugins: %1$s."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:355
@@ -228,82 +244,82 @@ msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
+"Das folgende Plugin muss auf die neueste Version aktualisiert werden, um "
+"maximale Kompatibilität mit diesem Theme sicher zu stellen: %1$s."
 msgstr[1] ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
+"Die folgenden Plugins müssen auf die neueste Version aktualisiert werden, um "
+"maximale Kompatibilität mit diesem Theme sicher zu stellen: %1$s."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:361
 #, php-format
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] "There is an update available for: %1$s."
-msgstr[1] "There are updates available for the following plugins: %1$s."
+msgstr[0] "Es ist ein Update verfügbar für: %1$s."
+msgstr[1] "Es sind Updates verfügbar für: %1$s."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:367
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "The following required plugin is currently inactive: %1$s."
-msgstr[1] "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Das folgende erforderliche Plugin ist derzeit inaktiv: %1$s."
+msgstr[1] "Die folgenden erforderlichen Plugins sind derzeit inaktiv: %1$s."
 
 #. translators: 1: plugin name(s).
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:373
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "The following recommended plugin is currently inactive: %1$s."
-msgstr[1] "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Das folgende empfohlene Plugin ist derzeit inaktiv: %1$s."
+msgstr[1] "Die folgenden empfohlenen Plugins sind derzeit inaktiv: %1$s."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:378
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
-msgstr[0] "Begin installing plugin"
-msgstr[1] "Begin installing plugins"
+msgstr[0] "Beginne das Plugin zu installieren"
+msgstr[1] "Beginne die Plugins zu installieren"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:383
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
-msgstr[0] "Begin updating plugin"
-msgstr[1] "Begin updating plugins"
+msgstr[0] "Beginne mit der Aktualisierung des Plugins"
+msgstr[1] "Beginne mit der Aktualisierung der Plugins"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:388
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
-msgstr[0] "Begin activating plugin"
-msgstr[1] "Begin activating plugins"
+msgstr[0] "Plugin wird aktiviert"
+msgstr[1] "Plugins werden aktiviert"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:392
 msgid "Return to Required Plugins Installer"
-msgstr "Return to Required Plugins Installer"
+msgstr "Zurück zur Installation der benötigten Plugins"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:393
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:920
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2626
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3673
 msgid "Return to the Dashboard"
-msgstr "Return to the Dashboard"
+msgstr "Zurück zum Dashboard"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:394
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3252
 msgid "Plugin activated successfully."
-msgstr "Plugin activated successfully."
+msgstr "Plugin erfolgreich aktiviert."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:395
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3045
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "The following plugin was activated successfully:"
-msgstr[1] "The following plugins were activated successfully:"
+msgstr[0] "Das folgende Plugin wurde erfolgreich aktiviert:"
+msgstr[1] "Die folgenden Plugins wurden erfolgreich aktiviert:"
 
 #. translators: 1: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:397
 #, php-format
 msgid "No action taken. Plugin %1$s was already active."
-msgstr "No action taken. Plugin %1$s was already active."
+msgstr "Keine Maßnahmen ergriffen. Plugin %1$s war bereits aktiv."
 
 #. translators: 1: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:399
@@ -312,50 +328,52 @@ msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
 "Please update the plugin."
 msgstr ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Plugin wurde nicht aktiviert. Eine neuere Version des %s ist für dieses "
+"Theme erforderlich. Bitte aktualisieren Sie das Plugin."
 
 #. translators: 1: dashboard link.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:401
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
-msgstr "All plugins installed and activated successfully. %1$s"
+msgstr "Alle Plugins wurden erfolgreich installiert und aktiviert. %1$s"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:402
 msgid "Dismiss this notice"
-msgstr "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:403
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
+"Es existieren ein oder mehrere benötigte oder empfohlene Plugins, die "
+"installiert, aktualisiert oder aktiviert werden müssen."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:404
 msgid "Please contact the administrator of this site for help."
-msgstr "Please contact the administrator of this site for help."
+msgstr "Bitte kontaktieren Sie den Administrator dieser Website für Hilfe."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:607
 msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Dieses Plugin muss aktualisiert werden, um mit Ihrem Theme kompatibel zu "
+"sein."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:608
 msgid "Update Required"
-msgstr "Update Required"
+msgstr "Aktualisierung erforderlich"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:725
 msgid "Set the parent_slug config variable instead."
-msgstr "Set the parent_slug config variable instead."
+msgstr "Verwenden Sie stattdessen die Variable parent_slug."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:1027
 msgid ""
 "The remote plugin package does not contain a folder with the desired slug "
 "and renaming did not work."
 msgstr ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
+"Das Remote-Plugin-Paket enthält keinen Ordner mit dem gewünschten Kürzel und "
+"eine Umbenennung hat nicht funktioniert."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:1027
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:1030
@@ -363,22 +381,22 @@ msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
 msgstr ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
+"Bitte kontaktieren Sie den Plugin-Anbieter und bitten Sie ihn, seine Plugins "
+"nach den Wordpress-Richtlinien zu komprimieren."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:1030
 msgid ""
 "The remote plugin package consists of more than one file, but the files are "
 "not packaged in a folder."
 msgstr ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
+"Das Remote-Plugin-Paket besteht aus mehreren Dateien, aber die Dateien sind "
+"nicht in einem Ordner gepackt."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:1214
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3041
 msgctxt "plugin A *and* plugin B"
 msgid "and"
-msgstr "and"
+msgstr "und"
 
 #. translators: %s: version number
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2075
@@ -388,11 +406,11 @@ msgstr "TGMPA v%s"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2366
 msgid "Required"
-msgstr "Required"
+msgstr "Erforderlich"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2369
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Empfohlen"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2385
 msgid "WordPress Repository"
@@ -400,7 +418,7 @@ msgstr "WordPress Repository"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2388
 msgid "External Source"
-msgstr "External Source"
+msgstr "Externe Quelle"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2391
 msgid "Pre-Packaged"
@@ -408,27 +426,27 @@ msgstr "Pre-Packaged"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2408
 msgid "Not Installed"
-msgstr "Not Installed"
+msgstr "Nicht installiert"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2412
 msgid "Installed But Not Activated"
-msgstr "Installed But Not Activated"
+msgstr "Installiert aber nicht aktiviert"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2414
 msgid "Active"
-msgstr "Active"
+msgstr "Aktiv"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2420
 msgid "Required Update not Available"
-msgstr "Required Update not Available"
+msgstr "Erforderliche Aktualisierung nicht verfügbar"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2423
 msgid "Requires Update"
-msgstr "Requires Update"
+msgstr "Update erforderlich"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2426
 msgid "Update recommended"
-msgstr "Update recommended"
+msgstr "Update empfohlen"
 
 #. translators: 1: install status, 2: update status
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2435
@@ -443,53 +461,54 @@ msgstr "%1$s, %2$s"
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "All <span class=\"count\">(%s)</span>"
-msgstr[1] "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+msgstr[1] "Alle <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2485
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] "To Install <span class=\"count\">(%s)</span>"
-msgstr[1] "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Zum Installieren <span class=\"count\">(%s)</span>"
+msgstr[1] "Zum Installieren <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2489
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Update Available <span class=\"count\">(%s)</span>"
-msgstr[1] "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Aktualisierung verfügbar <span class=\"count\">(%s)</span>"
+msgstr[1] "Aktualisierung verfügbar <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2493
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "To Activate <span class=\"count\">(%s)</span>"
-msgstr[1] "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Zum Aktivieren <span class=\"count\">(%s)</span>"
+msgstr[1] "Zum Aktivieren <span class=\"count\">(%s)</span>"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2575
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
-msgstr "unknown"
+msgstr "unbekannt"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2583
 msgid "Installed version:"
-msgstr "Installed version:"
+msgstr "Installierte Version:"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2591
 msgid "Minimum required version:"
-msgstr "Minimum required version:"
+msgstr "Minimal erforderliche Version:"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2603
 msgid "Available version:"
-msgstr "Available version:"
+msgstr "Verfügbare Version:"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2626
+#, fuzzy
 msgid "No plugins to install, update or activate."
-msgstr "No plugins to install, update or activate."
+msgstr "Keine Plugins zum installieren, aktualisieren oder aktivieren."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2640
 msgid "Plugin"
@@ -497,11 +516,11 @@ msgstr "Plugin"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2641
 msgid "Source"
-msgstr "Source"
+msgstr "Quelle"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2642
 msgid "Type"
-msgstr "Type"
+msgstr "Typ"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2647
 msgid "Status"
@@ -511,304 +530,332 @@ msgstr "Status"
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2696
 #, php-format
 msgid "Install %2$s"
-msgstr "Install %2$s"
+msgstr "Installiere %2$s"
 
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2701
 #, php-format
 msgid "Update %2$s"
-msgstr "Update %2$s"
+msgstr "Aktualisiere %2$s"
 
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2707
 #, php-format
 msgid "Activate %2$s"
-msgstr "Activate %2$s"
+msgstr "Aktiviere %2$s"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2777
 msgid "Upgrade message from the plugin author:"
-msgstr "Upgrade message from the plugin author:"
+msgstr "Upgrade-Nachricht vom Plugin-Autor:"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2810
 msgid "Install"
-msgstr "Install"
+msgstr "Installieren"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2816
 msgid "Update"
-msgstr "Update"
+msgstr "Aktualisieren"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2819
 msgid "Activate"
-msgstr "Activate"
+msgstr "Aktivieren"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2850
 msgid "No plugins were selected to be installed. No action taken."
-msgstr "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Es wurden keine Plugins zur Installation ausgewählt. Es wurde nichts "
+"unternommen."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2852
 msgid "No plugins were selected to be updated. No action taken."
-msgstr "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Es wurden keine Plugins zur Aktualisierung ausgewählt. Es wurde nichts "
+"unternommen."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2893
 msgid "No plugins are available to be installed at this time."
-msgstr "No plugins are available to be installed at this time."
+msgstr "Derzeit stehen keine Plugins zur Installation zur Verfügung."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:2895
 msgid "No plugins are available to be updated at this time."
-msgstr "No plugins are available to be updated at this time."
+msgstr "Derzeit stehen keine Plugins zur Aktualisierung zur Verfügung."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3001
 msgid "No plugins were selected to be activated. No action taken."
-msgstr "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Es wurden keine Plugins zur Aktivierung ausgewählt. Es wurde nichts "
+"unternommen."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3027
 msgid "No plugins are available to be activated at this time."
-msgstr "No plugins are available to be activated at this time."
+msgstr "Derzeit stehen keine Plugins zur Aktivierung zur Verfügung."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3251
 msgid "Plugin activation failed."
-msgstr "Plugin activation failed."
+msgstr "Plugin-Aktivierung fehlgeschlagen."
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3591
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Aktualisiere Plugin %1$s (%2$d/%3$d)"
 
 #. translators: 1: plugin name, 2: error message.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3594
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Während der Installation von %1$s: <strong>%2$s</strong> ist ein Fehler "
+"aufgetreten."
 
 #. translators: 1: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3596
 #, php-format
 msgid "The installation of %1$s failed."
-msgstr "The installation of %1$s failed."
+msgstr "Die Installation von %1$s ist fehlgeschlagen."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3600
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
+"Der Installations- und Aktivierungsprozess wurde gestartet. Dies kann eine "
+"Weile dauern, haben Sie etwas Geduld."
 
 #. translators: 1: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
 #, php-format
 msgid "%1$s installed and activated successfully."
-msgstr "%1$s installed and activated successfully."
+msgstr "%1$s erfolgreich installiert und aktiviert."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
 msgid "Show Details"
-msgstr "Show Details"
+msgstr "Details anzeigen"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
 msgid "Hide Details"
-msgstr "Hide Details"
+msgstr "Details ausblenden"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3603
 msgid "All installations and activations have been completed."
-msgstr "All installations and activations have been completed."
+msgstr "Alle Installationen und Aktivierungen sind abgeschlossen."
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3605
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installiere und aktiviere Plugin %1$s (%2$d/%3$d)"
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3608
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
+"Der Installationsprozess wird gestartet. Dieser Prozess kann auf manchen "
+"Servern etwas Zeit in Anspruch nehmen. Bitte haben Sie Geduld."
 
 #. translators: 1: plugin name.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
 #, php-format
 msgid "%1$s installed successfully."
-msgstr "%1$s installed successfully."
+msgstr "%1$s wurde erfolgreich installiert."
 
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3611
 msgid "All installations have been completed."
-msgstr "All installations have been completed."
+msgstr "Alle Installationen wurden abgeschlossen."
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/recommended-plugins/class-tgm-plugin-activation.php:3613
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
 
 #: inc/theme/custom-post-types.php:47
 msgctxt "taxonomy singular name"
 msgid "Category"
-msgstr "Category"
+msgstr "Kategorie"
 
 #: inc/theme/custom-post-types.php:48
+#, fuzzy
 msgid "Search Categorys"
-msgstr "Search Categorys"
+msgstr "Suchkategorien"
 
 #: inc/theme/custom-post-types.php:49
+#, fuzzy
 msgid "All Categorys"
-msgstr "All Categorys"
+msgstr "Alle Kategorien"
 
 #: inc/theme/custom-post-types.php:50
 msgid "Parent Category"
-msgstr "Parent Category"
+msgstr "Übergeordnete Kategorie"
 
 #: inc/theme/custom-post-types.php:51
 msgid "Parent Category:"
-msgstr "Parent Category:"
+msgstr "Übergeordnete Kategorie:"
 
 #: inc/theme/custom-post-types.php:52
 msgid "Edit Category"
-msgstr "Edit Category"
+msgstr "Kategorie bearbeiten"
 
 #: inc/theme/custom-post-types.php:53
 msgid "Update Category"
-msgstr "Update Category"
+msgstr "Kategorie aktualisieren"
 
 #: inc/theme/custom-post-types.php:54
 msgid "Add New Category"
-msgstr "Add New Category"
+msgstr "Neue Kategorie hinzufügen"
 
 #: inc/theme/custom-post-types.php:55
 msgid "New Genre Name"
-msgstr "New Genre Name"
+msgstr "Neuer Genre-Name"
 
 #: inc/theme/custom-post-types.php:56
 msgid "Categories"
-msgstr "Categories"
+msgstr "Kategorien"
 
 #: inc/theme/custom-post-types.php:78
 msgid "Add New "
-msgstr "Add New "
+msgstr "Neu hinzufügen"
 
 #: inc/theme/custom-post-types.php:79
 msgid "New "
-msgstr "New "
+msgstr "Neu"
 
 #: inc/theme/custom-post-types.php:80
 msgid "Edit "
-msgstr "Edit "
+msgstr "Bearbeiten "
 
 #: inc/theme/custom-post-types.php:81
 msgid "View "
-msgstr "View "
+msgstr "Ansehen"
 
 #: inc/theme/custom-post-types.php:82
 msgid "All "
-msgstr "All "
+msgstr "Alle "
 
 #: inc/theme/custom-post-types.php:83
 msgid "Search "
-msgstr "Search "
+msgstr "Suche "
 
 #: inc/theme/custom-post-types.php:84
 msgid "Parent :"
-msgstr "Parent :"
+msgstr "Übergeordnet :"
 
 #: inc/theme/custom-post-types.php:85 inc/theme/custom-post-types.php:86
 msgid "No "
-msgstr "No "
+msgstr "Nein "
 
 #: inc/theme/customizer.php:37
+#, fuzzy
 msgid "DRM Proxy Security"
-msgstr "DRM Proxy Security"
+msgstr "DRM-Proxysicherheit"
 
 #: inc/theme/customizer.php:50
+#, fuzzy
 msgid "DRM Proxy Url"
-msgstr "DRM Proxy Url"
+msgstr "DRM-Proxy-Url"
 
 #: inc/theme/customizer.php:66
+#, fuzzy
 msgid "Roku Direct Publisher Mrss Feed"
 msgstr "Roku Direct Publisher Mrss Feed"
 
 #: inc/theme/customizer.php:97
+#, fuzzy
 msgid "Generate Key"
-msgstr "Generate Key"
+msgstr "Generieren des Schlüssels"
 
 #: inc/theme/customizer.php:108
+#, fuzzy
 msgid "Join Page Options"
-msgstr "Join Page Options"
+msgstr "Join Page-Optionen"
 
 #: inc/theme/customizer.php:126
+#, fuzzy
 msgid "Enable Join Page Redirect"
-msgstr "Enable Join Page Redirect"
+msgstr "Join Page Redirect aktivieren"
 
 #: inc/theme/customizer.php:171
 msgid "Styles"
-msgstr "Styles"
+msgstr "Stile"
 
 #: inc/theme/customizer.php:185
 msgid "Logo"
 msgstr "Logo"
 
 #: inc/theme/customizer.php:205
+#, fuzzy
 msgid "Main Link Color"
-msgstr "Main Link Color"
+msgstr "Hauptlinkfarbe"
 
 #: inc/theme/customizer.php:225
+#, fuzzy
 msgid "Carousel Headings Color"
-msgstr "Carousel Headings Color"
+msgstr "Karussell Überschriften Farbe"
 
 #: inc/theme/customizer.php:245
 msgid "Background Color"
-msgstr "Background Color"
+msgstr "Hintergrundfarbe"
 
 #: inc/theme/customizer.php:264
+#, fuzzy
 msgid "Header Slider Size"
-msgstr "Header Slider Size"
+msgstr "Header Slider Größe"
 
 #: inc/theme/customizer.php:311
+#, fuzzy
 msgid "Synopsis Paragraph Text"
 msgstr "Synopsis Paragraph Text"
 
 #: inc/theme/customizer.php:342
+#, fuzzy
 msgid "Poster Orientation"
-msgstr "Poster Orientation"
+msgstr "Poster-Orientierung"
 
 #: inc/theme/customizer.php:347
 msgid "Portrait"
-msgstr "Portrait"
+msgstr "Hochformat"
 
 #: inc/theme/customizer.php:348
 msgid "Landscape"
-msgstr "Landscape"
+msgstr "Querformat"
 
 #: inc/theme/customizer.php:366
+#, fuzzy
 msgid "Tile Count"
-msgstr "Tile Count"
+msgstr "Kachelanzahl"
 
 #: inc/theme/customizer.php:426
+#, fuzzy
 msgid "Enable Loading Indicator"
-msgstr "Enable Loading Indicator"
+msgstr "Ladeanzeige aktivieren"
 
 #: inc/theme/customizer.php:446
+#, fuzzy
 msgid "Autoplay Home Slider"
 msgstr "Autoplay Home Slider"
 
 #: inc/theme/customizer.php:466
+#, fuzzy
 msgid "Enable The Video Right CLick"
-msgstr "Enable The Video Right CLick"
+msgstr "Aktivieren Sie das Video Rechts CLick"
 
 #: inc/theme/customizer.php:486
+#, fuzzy
 msgid "Disable Login Button"
-msgstr "Disable Login Button"
+msgstr "Deaktivieren der Login-Schaltfläche"
 
 #: inc/theme/customizer.php:506
+#, fuzzy
 msgid "Disable Reviews"
-msgstr "Disable Reviews"
+msgstr "Deaktivieren von Bewertungen"
 
 #: inc/theme/customizer.php:546
+#, fuzzy
 msgid "Maximum carousel videos - Desktop"
-msgstr "Maximum carousel videos - Desktop"
+msgstr "Maximale Karussell-Videos - Desktop"
 
 #: inc/theme/customizer.php:551
 msgid "-1"
@@ -835,98 +882,111 @@ msgid "30"
 msgstr "30"
 
 #: inc/theme/customizer.php:572
+#, fuzzy
 msgid "CPT "
-msgstr "CPT "
+msgstr "Cpt"
 
 #: inc/theme/customizer.php:611
+#, fuzzy
 msgid ""
 "!IMPORTANT this value cannot be the same name as the Post Type (only hyphens "
 "allowed NO spaces). Please make sure you save your permalinks after changing "
 "these values."
 msgstr ""
-"!IMPORTANT this value cannot be the same name as the Post Type (only hyphens "
-"allowed NO spaces). Please make sure you save your permalinks after changing "
-"these values."
+"! WICHTIG, dass dieser Wert nicht derselbe Name wie der Post-Typ sein kann "
+"(nur Bindestriche dürfen KEINE Leerzeichen). Bitte stellen Sie sicher, dass "
+"Sie Ihre Permalinks speichern, nachdem Sie diese Werte geändert haben."
 
 #: inc/theme/customizer.php:632
+#, fuzzy
 msgid ""
 "!IMPORTANT this value cannot be the same name as the Taxonomy (only hyphens "
 "allowed NO spaces). Please make sure you save your permalinks after changing "
 "these values."
 msgstr ""
-"!IMPORTANT this value cannot be the same name as the Taxonomy (only hyphens "
-"allowed NO spaces). Please make sure you save your permalinks after changing "
-"these values."
+"! WICHTIG, dass dieser Wert nicht derselbe Name wie die Taxonomie sein kann "
+"(nur Bindestriche dürfen KEINE Leerzeichen). Bitte stellen Sie sicher, dass "
+"Sie Ihre Permalinks speichern, nachdem Sie diese Werte geändert haben."
 
 #: inc/theme/customizer.php:651
 msgid "Show "
-msgstr "Show "
+msgstr "Anzeigen "
 
 #: inc/theme/customizer.php:666
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
 #: inc/theme/customizer.php:693
+#, fuzzy
 msgid "AWS Media Uploader"
 msgstr "AWS Media Uploader"
 
 #: inc/theme/customizer.php:763
+#, fuzzy
 msgid "Only allow uploads from logged in users"
-msgstr "Only allow uploads from logged in users"
+msgstr "Nur Uploads von angemeldeten Benutzern zulassen"
 
 #: inc/theme/customizer.php:776
+#, fuzzy
 msgid "AWS Signed Cookies"
-msgstr "AWS Signed Cookies"
+msgstr "AWS-signierte Cookies"
 
 #: inc/theme/customizer.php:794
+#, fuzzy
 msgid "Enable signed cookies"
-msgstr "Enable signed cookies"
+msgstr "Aktivieren signierter Cookies"
 
 #: inc/theme/customizer.php:845
 msgid "Advertising"
-msgstr "Advertising"
+msgstr "Werbung"
 
 #: inc/theme/customizer.php:879
+#, fuzzy
 msgid "Global set advertisements for all videos"
-msgstr "Global set advertisements for all videos"
+msgstr "Globale Set-Werbung für alle Videos"
 
 #: inc/theme/customizer.php:908
+#, fuzzy
 msgid "Social Cards"
 msgstr "Social Cards"
 
 #: inc/theme/customizer.php:942
+#, fuzzy
 msgid "Enable Twitter cards for videos"
-msgstr "Enable Twitter cards for videos"
+msgstr "Twitter-Karten für Videos aktivieren"
 
 #: inc/theme/customizer.php:978
+#, fuzzy
 msgid "Enable Facebook cards for videos"
-msgstr "Enable Facebook cards for videos"
+msgstr "Facebook-Karten für Videos aktivieren"
 
 #: inc/theme/customizer.php:995
 msgid "Default Image"
-msgstr "Default Image"
+msgstr "Standard Bild"
 
 #: inc/theme/helpers.php:64
 msgid "Header Menu"
-msgstr "Header Menu"
+msgstr "Hauptmenü"
 
 #: inc/theme/helpers.php:179
+#, fuzzy
 msgid ""
 "!IMPORTANT you have the S3Bubble self hosted plugin installed this is not "
 "needed with this theme all functionality is built in please remove the "
 "S3Bubble AWS Self Hosted Plugin"
 msgstr ""
-"!IMPORTANT you have the S3Bubble self hosted plugin installed this is not "
-"needed with this theme all functionality is built in please remove the "
-"S3Bubble AWS Self Hosted Plugin"
+"! WICHTIG, dass Sie das Selbst gehostete S3Bubble-Plugin installiert haben, "
+"dies ist nicht erforderlich mit diesem Thema alle Funktionen ist eingebaut "
+"bitte entfernen Sie die S3Bubble AWS Self Hosted Plugin"
 
 #: inc/theme/meta-boxes.php:365
+#, fuzzy
 msgid "Show in the main feature slider"
-msgstr "Show in the main feature slider"
+msgstr "Anzeigen im Haupt-Feature-Schieberegler"
 
 #: inc/theme/movie-meta.php:6
 msgid "Cast"
-msgstr "Cast"
+msgstr "Besetzung"
 
 #: inc/theme/movie-meta.php:29
 msgid "Genres"
@@ -936,12 +996,12 @@ msgstr "Genres"
 #: inc/theme/movie-meta.php:123 inc/theme/posts.php:194 inc/theme/posts.php:196
 #: inc/theme/posts.php:355
 msgid "Released"
-msgstr "Released"
+msgstr "Veröffentlicht"
 
 #: inc/theme/movie-meta.php:134 inc/theme/posts.php:202 inc/theme/posts.php:362
 #: inc/theme/reviews.php:29
 msgid "Rating"
-msgstr "Rating"
+msgstr "Bewertung"
 
 #: inc/theme/multi-post-thumbnails.php:77
 #, php-format
@@ -949,250 +1009,265 @@ msgid ""
 "The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are "
 "required"
 msgstr ""
-"The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are "
-"required"
+"Die ‚Beschriftung‘ und ‚Id‘ Werte des ‚args‘ Parameters von ‚%s::%s()‘ "
+"werden benötigt"
 
 #: inc/theme/multi-post-thumbnails.php:159
 #, php-format
 msgid "Set as %3$s"
-msgstr "Set as %3$s"
+msgstr "Als %3$s setzen"
 
 #: inc/theme/multi-post-thumbnails.php:393
 #: inc/theme/multi-post-thumbnails.php:394
 #, php-format
 msgid "Set %s"
-msgstr "Set %s"
+msgstr "Setze %s"
 
 #: inc/theme/multi-post-thumbnails.php:410
 #, php-format
 msgid "Remove %s"
-msgstr "Remove %s"
+msgstr "Entferne %s"
 
 #: inc/theme/parsers.php:42 inc/theme/parsers.php:72 inc/theme/parsers.php:80
 msgid "There was an error when reading this WXR file"
-msgstr "There was an error when reading this WXR file"
+msgstr "Beim Lesen dieser WXR-Datei ist ein Fehler aufgetreten"
 
 #: inc/theme/parsers.php:43
 msgid ""
 "Details are shown above. The importer will now try again with a different "
 "parser..."
 msgstr ""
-"Details are shown above. The importer will now try again with a different "
-"parser..."
+"Details werden oben angezeigt. Der Import wird es noch einmal mit einem "
+"anderen Parser versuchen  …"
 
 #: inc/theme/parsers.php:84 inc/theme/parsers.php:89 inc/theme/parsers.php:306
 #: inc/theme/parsers.php:495
 msgid ""
 "This does not appear to be a WXR file, missing/invalid WXR version number"
 msgstr ""
-"This does not appear to be a WXR file, missing/invalid WXR version number"
+"Dies scheint keine WXR-Datei zu sein (fehlende/ungültige WXR Versionsnummer)"
 
 #: inc/theme/posts.php:187
 msgid "Seasons"
-msgstr "Seasons"
+msgstr "Saisons"
 
 #: inc/theme/posts.php:213 templates/archive-slider.php:72
 #: templates/content-slider.php:75 templates/content-slider.php:128
+#, fuzzy
 msgid "CLICK TO REVIEW!"
-msgstr "CLICK TO REVIEW!"
+msgstr "KLICKEN SIE HIER, UM DIE SENDEZEIT ZU ÜBERPRÜFEN!"
 
 #: inc/theme/posts.php:214 templates/archive-slider.php:74
 #: templates/content-slider.php:77 templates/content-slider.php:130
+#, fuzzy
 msgid "Read reviews"
-msgstr "Read reviews"
+msgstr "Lesen Sie Bewertungen"
 
 #: inc/theme/posts.php:237 templates/archive-slider.php:47
 #: templates/content-slider.php:45
 msgid "Watch Trailer"
-msgstr "Watch Trailer"
+msgstr "Trailer anschauen"
 
 #: inc/theme/posts.php:559
+#, fuzzy
 msgid ""
 "Failed to find the movie code please make sure you have set the main video "
 "code!"
 msgstr ""
-"Failed to find the movie code please make sure you have set the main video "
-"code!"
+"Sie haben den Filmcode nicht gefunden, stellen Sie bitte sicher, dass Sie "
+"den Hauptvideocode festgelegt haben!"
 
 #: inc/theme/reviews.php:73
+#, fuzzy
 msgid "You must be logged in to like or dislike"
-msgstr "You must be logged in to like or dislike"
+msgstr "Sie müssen eingeloggt sein, um zu mögen oder nicht zu mögen"
 
 #: inc/theme/reviews.php:89
+#, fuzzy
 msgid "You have already left a review for this movie"
-msgstr "You have already left a review for this movie"
+msgstr "Sie haben bereits eine Rezension für diesen Film hinterlassen"
 
 #: inc/theme/reviews.php:118
 msgid "Thanks"
-msgstr "Thanks"
+msgstr "Danke"
 
 #: inc/theme/reviews.php:119
 msgid "Your review is awaiting approval"
-msgstr "Your review is awaiting approval"
+msgstr "Ihr Kommentar wartet auf Freischaltung"
 
 #: inc/theme/reviews.php:169
+#, fuzzy
 msgid "You must be logged in to view reviews"
-msgstr "You must be logged in to view reviews"
+msgstr "Sie müssen eingeloggt sein, um Bewertungen anzeigen zu können"
 
 #: inc/theme/reviews.php:206
+#, fuzzy
 msgid "Your reviews have been returned"
-msgstr "Your reviews have been returned"
+msgstr "Ihre Bewertungen wurden zurückgegeben"
 
 #: inc/theme/reviews.php:213
 msgid "No reviews"
-msgstr "No reviews"
+msgstr "Keine Bewertungen"
 
 #: inc/theme/s2member.php:9
 msgid "Log Out"
-msgstr "Log Out"
+msgstr "Abmelden"
 
 #: inc/theme/s2member.php:11
 msgid "Log In"
-msgstr "Log In"
+msgstr "Anmelden"
 
 #: inc/theme/uploader.php:138
 msgid "Notification email sent"
-msgstr "Notification email sent"
+msgstr "Benachrichtigung gesendet"
 
 #: search.php:32
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
 
 #: search.php:35 tag.php:35 taxonomy.php:35
 msgid "FILTER"
-msgstr "FILTER"
+msgstr "Filter"
 
 #: search.php:38
+#, fuzzy
 msgid "1 Day Ago"
-msgstr "1 Day Ago"
+msgstr "1 Tag Ago"
 
 #: search.php:39
+#, fuzzy
 msgid "1 Week Ago"
-msgstr "1 Week Ago"
+msgstr "1 Woche Vor"
 
 #: searchform.php:3
 msgid "Search..."
-msgstr "Search..."
+msgstr "Suche..."
 
 #: taxonomy.php:39
 msgid "Most Reviews"
-msgstr "Most Reviews"
+msgstr "Am häufigsten bewertet"
 
 #: taxonomy.php:40
 msgid "Recently Added"
-msgstr "Recently Added"
+msgstr "Kürzlich hinzugefügt"
 
 #: taxonomy.php:41
 msgid "Oldest First"
-msgstr "Oldest First"
+msgstr "Älteste zuerst"
 
 #: templates/archive-slider.php:63 templates/content-slider.php:66
 #: templates/content-slider.php:119
 msgid "No Title"
-msgstr "No Title"
+msgstr "Kein Titel"
 
 #: templates/archive-slider.php:108 templates/content-slider.php:165
+#, fuzzy
 msgid "S3Bubble Media Streaming"
 msgstr "S3Bubble Media Streaming"
 
 #: templates/archive-slider.php:109 templates/content-slider.php:166
+#, fuzzy
 msgid ""
 "To display a image here go to your custom post and look for the metabox "
 "(Main Slider Video) and check it."
 msgstr ""
-"To display a image here go to your custom post and look for the metabox "
-"(Main Slider Video) and check it."
+"Um ein Bild hier anzuzeigen, gehen Sie zu Ihrem benutzerdefinierten Beitrag "
+"und suchen Sie nach der Metabox (Main Slider Video) und überprüfen Sie sie."
 
 #: templates/join-template.php:28
 msgid "SIGN IN"
-msgstr "SIGN IN"
+msgstr "ANMELDEN"
 
 #: templates/join-template.php:32
+#, fuzzy
 msgid "JOIN FOR A MONTH FOR FREE"
-msgstr "JOIN FOR A MONTH FOR FREE"
+msgstr "JOIN FOR A MONAT KOSTENLOS"
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to checkout."
-msgstr "You must be logged in to checkout."
+msgstr "Bitte melden Sie sich an, um die Bestellung abzuschließen."
 
 #: woocommerce/checkout/form-checkout.php:52
 msgid "Your order"
-msgstr "Your order"
+msgstr "Ihre Bestellung"
 
 #: woocommerce/myaccount/form-login.php:32
 msgid "Login"
-msgstr "Login"
+msgstr "Anmelden"
 
 #: woocommerce/myaccount/form-login.php:39
 msgid "Username or email address"
-msgstr "Username or email address"
+msgstr "Benutzername oder E-Mail Adresse"
 
 #: woocommerce/myaccount/form-login.php:43
 #: woocommerce/myaccount/form-login.php:93
+#, fuzzy
 msgid "Password"
-msgstr "Password"
+msgstr "Passwort"
 
 #: woocommerce/myaccount/form-login.php:51
 msgid "Log in"
-msgstr "Log in"
+msgstr "Anmelden"
 
 #: woocommerce/myaccount/form-login.php:53
 msgid "Remember me"
-msgstr "Remember me"
+msgstr "Angemeldet bleiben"
 
 #: woocommerce/myaccount/form-login.php:57
 msgid "Lost your password?"
-msgstr "Lost your password?"
+msgstr "Passwort vergessen?"
 
 #: woocommerce/myaccount/form-login.php:70
 #: woocommerce/myaccount/form-login.php:103
 msgid "Register"
-msgstr "Register"
+msgstr "Registrieren"
 
 #: woocommerce/myaccount/form-login.php:79
 msgid "Username"
-msgstr "Username"
+msgstr "Benutzername"
 
 #: woocommerce/myaccount/form-login.php:86
 msgid "Email address"
-msgstr "Email address"
+msgstr "E-Mail-Adresse"
 
 #: woocommerce/myaccount/form-lost-password.php:33
 msgid ""
 "Lost your password? Please enter your username or email address. You will "
 "receive a link to create a new password via email."
 msgstr ""
-"Lost your password? Please enter your username or email address. You will "
-"receive a link to create a new password via email."
+"Haben Sie Ihr Passwort vergessen? Bitte geben Sie Ihren Benutzernamen oder E-"
+"Mail-Adresse ein. Sie erhalten einen Link per E-Mail, womit Sie sich ein "
+"neues Passwort erstellen können."
 
 #: woocommerce/myaccount/form-lost-password.php:36
 msgid "Username or email"
-msgstr "Username or email"
+msgstr "Benutzername oder E-Mail"
 
 #: woocommerce/myaccount/form-lost-password.php:46
 msgid "Reset password"
-msgstr "Reset password"
+msgstr "Passwort zurücksetzen"
 
 #: woocommerce/myaccount/form-reset-password.php:32
 msgid "Enter a new password below."
-msgstr "Enter a new password below."
+msgstr "Geben Sie ein neues Passwort ein."
 
 #: woocommerce/myaccount/form-reset-password.php:35
 msgid "New password"
-msgstr "New password"
+msgstr "Neues Passwort"
 
 #: woocommerce/myaccount/form-reset-password.php:39
 msgid "Re-enter new password"
-msgstr "Re-enter new password"
+msgstr "Neues Passwort nochmals eingeben"
 
 #: woocommerce/myaccount/form-reset-password.php:52
 msgid "Save"
-msgstr "Save"
+msgstr "Speichern"
 
 #: woocommerce/myaccount/lost-password-confirmation.php:20
 msgid "Password reset email has been sent."
-msgstr "Password reset email has been sent."
+msgstr ""
+"Das Passwort wurde erfolgreich zurückgesetzt. Eine Mail wurde versandt."
 
 #: woocommerce/myaccount/lost-password-confirmation.php:33
 msgid ""
@@ -1200,36 +1275,44 @@ msgid ""
 "account, but may take several minutes to show up in your inbox. Please wait "
 "at least 10 minutes before attempting another reset."
 msgstr ""
-"A password reset email has been sent to the email address on file for your "
-"account, but may take several minutes to show up in your inbox. Please wait "
-"at least 10 minutes before attempting another reset."
+"Eine E-Mail zum Zurücksetzen des Passwortes wurde an Ihre E-Mail-Adresse "
+"gesendet. Es kann jedoch dauern, bis die E-Mail in Ihrem Postfach erscheint. "
+"Bitte warten Sie mindestens 10 Minuten, bis Sie es nochmal versuchen."
 
 #. Theme Name of the plugin/theme
+#, fuzzy
 msgid "S3Bubble Streamium Pro Theme"
-msgstr "S3Bubble Streamium Pro Theme"
+msgstr "S3Bubble Streamium Pro Thema"
 
 #. Theme URI of the plugin/theme
+#, fuzzy
 msgid "https://s3bubble.com"
 msgstr "https://s3bubble.com"
 
 #. Description of the plugin/theme
+#, fuzzy
 msgid ""
 "S3Bubble brings a Netflix style theme with all the power to your fingertips"
 msgstr ""
-"S3Bubble brings a Netflix style theme with all the power to your fingertips"
+"S3Bubble bringt ein Netflix-Stil-Thema mit all der Kraft auf Ihre "
+"Fingerspitzen"
 
 #. Author of the plugin/theme
+#, fuzzy
 msgid "S3Bubble"
 msgstr "S3Bubble"
 
 #. Template Name of the plugin/theme
+#, fuzzy
 msgid "Mrss XML Template"
-msgstr "Mrss XML Template"
+msgstr "Mrss XML-Vorlage"
 
 #. Template Name of the plugin/theme
+#, fuzzy
 msgid "Tests Page Template"
-msgstr "Tests Page Template"
+msgstr "Testseitenvorlage"
 
 #. Template Name of the plugin/theme
+#, fuzzy
 msgid "Roku Direct Publisher Mrss Template"
-msgstr "Roku Direct Publisher Mrss Template"
+msgstr "Roku Direct Publisher Mrss Vorlage"
