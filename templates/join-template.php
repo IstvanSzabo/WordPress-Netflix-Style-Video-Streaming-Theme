@@ -12,8 +12,8 @@
 		$image       = wp_get_attachment_image_url( get_post_thumbnail_id(), 'content_tile_full_width_landscape' );
 		if ( class_exists( 'WooCommerce' ) ) {
 
-			$shopPage    = get_permalink( woocommerce_get_page_id( 'shop' ) );
-			$accountPage = get_permalink( woocommerce_get_page_id( 'myaccount' ) );
+			$shopPage    = get_permalink( wc_get_page_id( 'shop' ) );
+			$accountPage = get_permalink( wc_get_page_id( 'myaccount' ) );
 
 		}else{
 
