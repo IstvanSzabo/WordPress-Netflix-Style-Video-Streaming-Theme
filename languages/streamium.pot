@@ -1,0 +1,1193 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: S3Bubble Streamium Pro Theme\n"
+"POT-Creation-Date: 2020-02-11 11:53+0000\n"
+"PO-Revision-Date: 2020-02-11 11:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: 404.php:9
+msgid "Oops! That can&rsquo;t be found"
+msgstr ""
+
+#: 404.php:10
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: category.php:24 tag.php:32 taxonomy.php:32
+#, php-format
+msgid "Viewing: %s"
+msgstr ""
+
+#: footer.php:21 inc/theme/reviews.php:248
+msgid "Reviews"
+msgstr ""
+
+#: forum.php:16 forum.php:28 page.php:16 page.php:28 single.php:39
+#: templates/plans-template.php:18
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: functions.php:25
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: functions.php:80
+msgid "Smart TV App Feeds"
+msgstr ""
+
+#: functions.php:87
+msgid "Open Roku Mrss Feed"
+msgstr ""
+
+#: functions.php:95
+msgid "Open Amazon FireTV Mrss Feed"
+msgstr ""
+
+#: functions.php:103
+msgid "Download Example Brand Assets"
+msgstr ""
+
+#: functions.php:168
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:178
+msgid "Post Sidebar"
+msgstr ""
+
+#: functions.php:187
+msgid "Forum Sidebar"
+msgstr ""
+
+#: functions.php:210
+msgid "Video Tile"
+msgstr ""
+
+#: functions.php:211
+msgid "Video Tile Expanded"
+msgstr ""
+
+#: functions.php:212
+msgid "Video Tile Large Expanded"
+msgstr ""
+
+#: functions.php:213
+msgid "Multi Video Thumb"
+msgstr ""
+
+#: functions.php:214
+msgid "Main Slider"
+msgstr ""
+
+#: functions.php:261 inc/theme/posts.php:231 templates/archive-slider.php:40
+#: templates/content-slider.php:38
+msgid "read more"
+msgstr ""
+
+#: functions.php:264
+msgid "Continue Watching"
+msgstr ""
+
+#: functions.php:265
+msgid "Browse"
+msgstr ""
+
+#: functions.php:266
+msgid "Error"
+msgstr ""
+
+#: functions.php:267 inc/theme/posts.php:551
+msgid "Success"
+msgstr ""
+
+#: functions.php:268
+msgid "Ok"
+msgstr ""
+
+#: functions.php:269
+msgid "Cancel"
+msgstr ""
+
+#: functions.php:270
+msgid "Ok, got it!"
+msgstr ""
+
+#: functions.php:271 inc/theme/reviews.php:244 inc/theme/reviews.php:246
+msgid "Review"
+msgstr ""
+
+#: functions.php:272 functions.php:273
+msgid "Please tell us why"
+msgstr ""
+
+#: functions.php:274
+msgid "Please enter over 30 characters and select rating!"
+msgstr ""
+
+#: header.php:78 header.php:191
+msgid "Menu"
+msgstr ""
+
+#: header.php:81 taxonomy.php:38
+msgid "View All"
+msgstr ""
+
+#: header.php:100 header.php:140
+msgid "All"
+msgstr ""
+
+#: header.php:180
+msgid "Add Menu (Location Header Menu)"
+msgstr ""
+
+#: header.php:190
+msgid "Search"
+msgstr ""
+
+#: inc/api/cats.php:85 inc/api/cats.php:100 inc/api/custom.php:85
+#: inc/api/custom.php:100 inc/api/home.php:124 inc/api/home.php:139
+#: inc/api/recent.php:75 inc/api/recent.php:90 inc/api/search.php:152
+#: inc/api/search.php:167 inc/api/tag.php:70 inc/api/tag.php:85
+#: inc/api/tax.php:171 inc/api/tax.php:186
+msgid "Available on"
+msgstr ""
+
+#: inc/api/cats.php:85 inc/api/cats.php:100 inc/api/custom.php:85
+#: inc/api/custom.php:100 inc/api/home.php:124 inc/api/home.php:139
+#: inc/api/recent.php:75 inc/api/recent.php:90 inc/api/search.php:152
+#: inc/api/search.php:167 inc/api/tag.php:70 inc/api/tag.php:85
+#: inc/api/tax.php:171 inc/api/tax.php:186
+msgid "plan"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:393
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:920
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2626
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:394
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:395
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:1027
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:1214
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2435
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2481
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3602
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/recommended-plugins/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:47
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:48
+msgid "Search Categorys"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:49
+msgid "All Categorys"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:50
+msgid "Parent Category"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:51
+msgid "Parent Category:"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:52
+msgid "Edit Category"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:53
+msgid "Update Category"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:54
+msgid "Add New Category"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:55
+msgid "New Genre Name"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:56
+msgid "Categories"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:78
+msgid "Add New "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:79
+msgid "New "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:80
+msgid "Edit "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:81
+msgid "View "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:82
+msgid "All "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:83
+msgid "Search "
+msgstr ""
+
+#: inc/theme/custom-post-types.php:84
+msgid "Parent :"
+msgstr ""
+
+#: inc/theme/custom-post-types.php:85 inc/theme/custom-post-types.php:86
+msgid "No "
+msgstr ""
+
+#: inc/theme/customizer.php:37
+msgid "DRM Proxy Security"
+msgstr ""
+
+#: inc/theme/customizer.php:50
+msgid "DRM Proxy Url"
+msgstr ""
+
+#: inc/theme/customizer.php:66
+msgid "Roku Direct Publisher Mrss Feed"
+msgstr ""
+
+#: inc/theme/customizer.php:97
+msgid "Generate Key"
+msgstr ""
+
+#: inc/theme/customizer.php:108
+msgid "Join Page Options"
+msgstr ""
+
+#: inc/theme/customizer.php:126
+msgid "Enable Join Page Redirect"
+msgstr ""
+
+#: inc/theme/customizer.php:171
+msgid "Styles"
+msgstr ""
+
+#: inc/theme/customizer.php:185
+msgid "Logo"
+msgstr ""
+
+#: inc/theme/customizer.php:205
+msgid "Main Link Color"
+msgstr ""
+
+#: inc/theme/customizer.php:225
+msgid "Carousel Headings Color"
+msgstr ""
+
+#: inc/theme/customizer.php:245
+msgid "Background Color"
+msgstr ""
+
+#: inc/theme/customizer.php:264
+msgid "Header Slider Size"
+msgstr ""
+
+#: inc/theme/customizer.php:311
+msgid "Synopsis Paragraph Text"
+msgstr ""
+
+#: inc/theme/customizer.php:342
+msgid "Poster Orientation"
+msgstr ""
+
+#: inc/theme/customizer.php:347
+msgid "Portrait"
+msgstr ""
+
+#: inc/theme/customizer.php:348
+msgid "Landscape"
+msgstr ""
+
+#: inc/theme/customizer.php:366
+msgid "Tile Count"
+msgstr ""
+
+#: inc/theme/customizer.php:426
+msgid "Enable Loading Indicator"
+msgstr ""
+
+#: inc/theme/customizer.php:446
+msgid "Autoplay Home Slider"
+msgstr ""
+
+#: inc/theme/customizer.php:466
+msgid "Enable The Video Right CLick"
+msgstr ""
+
+#: inc/theme/customizer.php:486
+msgid "Disable Login Button"
+msgstr ""
+
+#: inc/theme/customizer.php:506
+msgid "Disable Reviews"
+msgstr ""
+
+#: inc/theme/customizer.php:546
+msgid "Maximum carousel videos - Desktop"
+msgstr ""
+
+#: inc/theme/customizer.php:551
+msgid "-1"
+msgstr ""
+
+#: inc/theme/customizer.php:552
+msgid "6"
+msgstr ""
+
+#: inc/theme/customizer.php:553
+msgid "12"
+msgstr ""
+
+#: inc/theme/customizer.php:554
+msgid "18"
+msgstr ""
+
+#: inc/theme/customizer.php:555
+msgid "24"
+msgstr ""
+
+#: inc/theme/customizer.php:556
+msgid "30"
+msgstr ""
+
+#: inc/theme/customizer.php:572
+msgid "CPT "
+msgstr ""
+
+#: inc/theme/customizer.php:611
+msgid ""
+"!IMPORTANT this value cannot be the same name as the Post Type (only hyphens "
+"allowed NO spaces). Please make sure you save your permalinks after changing "
+"these values."
+msgstr ""
+
+#: inc/theme/customizer.php:632
+msgid ""
+"!IMPORTANT this value cannot be the same name as the Taxonomy (only hyphens "
+"allowed NO spaces). Please make sure you save your permalinks after changing "
+"these values."
+msgstr ""
+
+#: inc/theme/customizer.php:651
+msgid "Show "
+msgstr ""
+
+#: inc/theme/customizer.php:666
+msgid "Google Analytics"
+msgstr ""
+
+#: inc/theme/customizer.php:693
+msgid "AWS Media Uploader"
+msgstr ""
+
+#: inc/theme/customizer.php:763
+msgid "Only allow uploads from logged in users"
+msgstr ""
+
+#: inc/theme/customizer.php:776
+msgid "AWS Signed Cookies"
+msgstr ""
+
+#: inc/theme/customizer.php:794
+msgid "Enable signed cookies"
+msgstr ""
+
+#: inc/theme/customizer.php:845
+msgid "Advertising"
+msgstr ""
+
+#: inc/theme/customizer.php:879
+msgid "Global set advertisements for all videos"
+msgstr ""
+
+#: inc/theme/customizer.php:908
+msgid "Social Cards"
+msgstr ""
+
+#: inc/theme/customizer.php:942
+msgid "Enable Twitter cards for videos"
+msgstr ""
+
+#: inc/theme/customizer.php:978
+msgid "Enable Facebook cards for videos"
+msgstr ""
+
+#: inc/theme/customizer.php:995
+msgid "Default Image"
+msgstr ""
+
+#: inc/theme/helpers.php:64
+msgid "Header Menu"
+msgstr ""
+
+#: inc/theme/helpers.php:179
+msgid ""
+"!IMPORTANT you have the S3Bubble self hosted plugin installed this is not "
+"needed with this theme all functionality is built in please remove the "
+"S3Bubble AWS Self Hosted Plugin"
+msgstr ""
+
+#: inc/theme/meta-boxes.php:365
+msgid "Show in the main feature slider"
+msgstr ""
+
+#: inc/theme/movie-meta.php:6
+msgid "Cast"
+msgstr ""
+
+#: inc/theme/movie-meta.php:29
+msgid "Genres"
+msgstr ""
+
+#: inc/theme/movie-meta.php:50 inc/theme/movie-meta.php:121
+#: inc/theme/movie-meta.php:123 inc/theme/posts.php:194 inc/theme/posts.php:196
+#: inc/theme/posts.php:355
+msgid "Released"
+msgstr ""
+
+#: inc/theme/movie-meta.php:134 inc/theme/posts.php:202 inc/theme/posts.php:362
+#: inc/theme/reviews.php:29
+msgid "Rating"
+msgstr ""
+
+#: inc/theme/multi-post-thumbnails.php:77
+#, php-format
+msgid ""
+"The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are "
+"required"
+msgstr ""
+
+#: inc/theme/multi-post-thumbnails.php:159
+#, php-format
+msgid "Set as %3$s"
+msgstr ""
+
+#: inc/theme/multi-post-thumbnails.php:393
+#: inc/theme/multi-post-thumbnails.php:394
+#, php-format
+msgid "Set %s"
+msgstr ""
+
+#: inc/theme/multi-post-thumbnails.php:410
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: inc/theme/parsers.php:42 inc/theme/parsers.php:72 inc/theme/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: inc/theme/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: inc/theme/parsers.php:84 inc/theme/parsers.php:89 inc/theme/parsers.php:306
+#: inc/theme/parsers.php:495
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: inc/theme/posts.php:187
+msgid "Seasons"
+msgstr ""
+
+#: inc/theme/posts.php:213 templates/archive-slider.php:72
+#: templates/content-slider.php:75 templates/content-slider.php:128
+msgid "CLICK TO REVIEW!"
+msgstr ""
+
+#: inc/theme/posts.php:214 templates/archive-slider.php:74
+#: templates/content-slider.php:77 templates/content-slider.php:130
+msgid "Read reviews"
+msgstr ""
+
+#: inc/theme/posts.php:237 templates/archive-slider.php:47
+#: templates/content-slider.php:45
+msgid "Watch Trailer"
+msgstr ""
+
+#: inc/theme/posts.php:559
+msgid ""
+"Failed to find the movie code please make sure you have set the main video "
+"code!"
+msgstr ""
+
+#: inc/theme/reviews.php:73
+msgid "You must be logged in to like or dislike"
+msgstr ""
+
+#: inc/theme/reviews.php:89
+msgid "You have already left a review for this movie"
+msgstr ""
+
+#: inc/theme/reviews.php:118
+msgid "Thanks"
+msgstr ""
+
+#: inc/theme/reviews.php:119
+msgid "Your review is awaiting approval"
+msgstr ""
+
+#: inc/theme/reviews.php:169
+msgid "You must be logged in to view reviews"
+msgstr ""
+
+#: inc/theme/reviews.php:206
+msgid "Your reviews have been returned"
+msgstr ""
+
+#: inc/theme/reviews.php:213
+msgid "No reviews"
+msgstr ""
+
+#: inc/theme/s2member.php:9
+msgid "Log Out"
+msgstr ""
+
+#: inc/theme/s2member.php:11
+msgid "Log In"
+msgstr ""
+
+#: inc/theme/uploader.php:138
+msgid "Notification email sent"
+msgstr ""
+
+#: search.php:32
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:35 tag.php:35 taxonomy.php:35
+msgid "FILTER"
+msgstr ""
+
+#: search.php:38
+msgid "1 Day Ago"
+msgstr ""
+
+#: search.php:39
+msgid "1 Week Ago"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search..."
+msgstr ""
+
+#: taxonomy.php:39
+msgid "Most Reviews"
+msgstr ""
+
+#: taxonomy.php:40
+msgid "Recently Added"
+msgstr ""
+
+#: taxonomy.php:41
+msgid "Oldest First"
+msgstr ""
+
+#: templates/archive-slider.php:63 templates/content-slider.php:66
+#: templates/content-slider.php:119
+msgid "No Title"
+msgstr ""
+
+#: templates/archive-slider.php:108 templates/content-slider.php:165
+msgid "S3Bubble Media Streaming"
+msgstr ""
+
+#: templates/archive-slider.php:109 templates/content-slider.php:166
+msgid ""
+"To display a image here go to your custom post and look for the metabox "
+"(Main Slider Video) and check it."
+msgstr ""
+
+#: templates/join-template.php:28
+msgid "SIGN IN"
+msgstr ""
+
+#: templates/join-template.php:32
+msgid "JOIN FOR A MONTH FOR FREE"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:52
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:32
+msgid "Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:39
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:43
+#: woocommerce/myaccount/form-login.php:93
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:51
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:53
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:57
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:70
+#: woocommerce/myaccount/form-login.php:103
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:79
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:86
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:33
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:36
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:46
+msgid "Reset password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:32
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:35
+msgid "New password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:39
+msgid "Re-enter new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:52
+msgid "Save"
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:20
+msgid "Password reset email has been sent."
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:33
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "S3Bubble Streamium Pro Theme"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://s3bubble.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"S3Bubble brings a Netflix style theme with all the power to your fingertips"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "S3Bubble"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Mrss XML Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Tests Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Roku Direct Publisher Mrss Template"
+msgstr ""
