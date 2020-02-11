@@ -5,7 +5,8 @@ if ( get_theme_mod( 'streamium_enable_splash_join_redirect', false )) {
 
 	if ( !is_user_logged_in() ) {
 
-		wp_redirect( site_url( '/join' ) );
+		$join = streamium_get_template_url('templates/join-template.php');
+		wp_redirect( $join );
 	  	exit;
 
 	}
