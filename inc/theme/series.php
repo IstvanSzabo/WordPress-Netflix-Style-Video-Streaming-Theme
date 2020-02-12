@@ -4,7 +4,7 @@
  * Ajax post scipts for content
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_dynamic_series_content() {
 
@@ -64,7 +64,7 @@ add_action( 'wp_ajax_streamium_get_dynamic_series_content', 'streamium_get_dynam
  * Ajax remove series from list
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_admin_series_remove_video() {
 

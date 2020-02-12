@@ -1169,7 +1169,7 @@ add_action('wp_head', array( 'Streamium_Customize' , 'header_output' ));
  * This makes sure the post type and tax is in sync
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_customizer_valid_types($params){
 

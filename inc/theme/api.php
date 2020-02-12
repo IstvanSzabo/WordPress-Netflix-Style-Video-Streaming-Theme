@@ -4,7 +4,7 @@
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_series_init() {
 
@@ -45,7 +45,7 @@ add_action( 'init', 'streamium_api_add_series_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_series_get_field( $object, $field_name, $request ) {
 
@@ -160,7 +160,7 @@ function streamium_api_add_series_get_field( $object, $field_name, $request ) {
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_media_init() {
 
@@ -201,7 +201,7 @@ add_action( 'init', 'streamium_api_add_media_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_media_get_field( $object, $field_name, $request ) {
 
@@ -229,7 +229,7 @@ function streamium_api_add_media_get_field( $object, $field_name, $request ) {
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_watched_init() {
 
@@ -270,7 +270,7 @@ add_action( 'init', 'streamium_api_add_watched_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_watched_get_field( $object, $field_name, $request ) {
 
@@ -295,7 +295,7 @@ function streamium_api_add_watched_get_field( $object, $field_name, $request ) {
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_reviews_init() {
 
@@ -336,7 +336,7 @@ add_action( 'init', 'streamium_api_add_reviews_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_reviews_get_field( $object, $field_name, $request ) {
 
@@ -360,7 +360,7 @@ function streamium_api_add_reviews_get_field( $object, $field_name, $request ) {
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_extra_meta_init() {
 
@@ -401,7 +401,7 @@ add_action( 'init', 'streamium_api_add_extra_meta_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_add_extra_meta_get_field( $object, $field_name, $request ) {
 
@@ -430,7 +430,7 @@ function streamium_api_add_extra_meta_get_field( $object, $field_name, $request 
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_thumbnails_init() {
 
@@ -472,7 +472,7 @@ add_action( 'init', 'streamium_api_thumbnails_init', 12 );
  * Update the Wordpress api url prefix
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_api_thumbnails_get_field( $object, $field_name, $request ) {
 
@@ -577,7 +577,7 @@ function streamium_api_thumbnails_get_field( $object, $field_name, $request ) {
  * Resume video time ajax
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function mrss_generate_key() {
 

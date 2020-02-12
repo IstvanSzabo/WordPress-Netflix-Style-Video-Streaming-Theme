@@ -4,7 +4,7 @@
  * Function to remove all recently watched if need use for debug
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_remove_all_recently_watched(){
 

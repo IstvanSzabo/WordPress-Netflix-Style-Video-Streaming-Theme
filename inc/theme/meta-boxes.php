@@ -4,7 +4,7 @@
  * Adds meta boxes within a post
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_video_code_meta_box_add(){
 
@@ -30,8 +30,12 @@ function streamium_video_code_meta_box_add(){
 
     // Video Ratings meta
     add_meta_box( 'streamium-meta-box-ratings', 'Set Video Rating (PG|R|G|PG-13|NC-17)', 'streamium_meta_box_ratings', streamium_global_meta(), 'side', 'high' );
-       
 
+    // WOO::
+    if ( class_exists( 'WooCommerce' ) ) {
+        add_meta_box( 'streamium-premium-meta-box-woo', 'Woocommerce Product', 'streamium_premium_meta_box_woo', streamium_global_meta(), 'side', 'high');
+    }
+    
 }
 
 add_action( 'add_meta_boxes', 'streamium_video_code_meta_box_add' );
@@ -40,7 +44,7 @@ add_action( 'add_meta_boxes', 'streamium_video_code_meta_box_add' );
  * Sets up the meta box content for the main video
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_movie(){
 
@@ -67,7 +71,7 @@ function streamium_meta_box_movie(){
  * Sets up the meta box content for Roku
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_roku(){
 
@@ -140,7 +144,7 @@ function streamium_meta_box_roku(){
  * Sets up the meta box content for the video trailer
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_trailer(){
 
@@ -174,7 +178,7 @@ function streamium_meta_box_trailer(){
  * Sets up the meta box content for the video background on home slider
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_bgvideo(){
 
@@ -202,7 +206,7 @@ function streamium_meta_box_bgvideo(){
  * Setup custom repeater meta
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_repeatable_meta_box_display() {
 
@@ -349,7 +353,7 @@ function streamium_repeatable_meta_box_display() {
  * Setup custom repeater meta
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_main_slider() {
   
@@ -373,7 +377,7 @@ function streamium_meta_box_main_slider() {
  * Optional extra meta
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_extra_meta() {
   
@@ -396,7 +400,7 @@ function streamium_meta_box_extra_meta() {
  * Add video ratings PG etc
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_ratings() {
   
@@ -419,7 +423,7 @@ function streamium_meta_box_ratings() {
  * Overide release date
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_meta_box_release_date() {
   
@@ -439,10 +443,81 @@ function streamium_meta_box_release_date() {
 }
 
 /**
+ * Sets up the meta box content for the video background on home slider
+ * https://docs.woocommerce.com/wc-apidocs/function-wc_get_product.html
+ * @return null
+ * @author  @s3bubble
+ */
+function streamium_premium_meta_box_woo(){
+
+    error_log('streamium_premium_meta_box_woo');
+
+    // SECURITY::
+    wp_nonce_field( 'streamium_premium_meta_security', 'streamium_premium_meta_nonce' );
+
+    error_log('after streamium_premium_meta_box_woo');
+
+    $query = new WC_Product_Query( array(
+        'limit' => 1000,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'return' => 'ids',
+    ) );
+    $products = $query->get_products();
+
+    $product_id = get_post_meta( get_the_ID(), 'streamium_premium_meta_box_woo_product', true );
+
+    ?>
+
+        <p class="streamium-meta-box-wrapper"> 
+
+            <select tabindex="1" name="streamium_premium_meta_box_woo_product">
+
+                <?php 
+
+                    if(isset($product_id)){
+                        
+                        $get_product = wc_get_product( $product_id );
+
+                         ?>
+
+                            <option value="<?php echo $get_product->post->ID; ?>"><?php echo $get_product->post->post_title; ?></option>
+
+                            <option value="">Remove Product/Plan</option>
+
+                        <?php
+
+                    }else{ ?>
+
+                        <option value="">No Product/Plan</option>
+
+                    <?php }
+
+                ?>
+                
+                <?php foreach ($products as $key => $product) { 
+
+                    $post_object = get_post($product); 
+
+                ?>
+
+                <option value="<?php echo $post_object->ID; ?>"><?php echo $post_object->post_title; ?></option>
+
+                <?php } ?>
+
+            </select>
+
+        </p>
+
+    <?php
+
+}
+
+/**
  * Saves the meta box content
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_post_meta_box_save( $post_id )
 {
@@ -521,6 +596,14 @@ function streamium_post_meta_box_save( $post_id )
 
     }
 
+    // WOO SECTION  =>
+    if( isset( $_POST['streamium_premium_meta_box_woo_product'] ) ){
+
+        update_post_meta( $post_id, 'streamium_premium_meta_box_woo_product', $_POST['streamium_premium_meta_box_woo_product'] );
+      
+    }
+    // WOO SECTION  =>
+
     // DEPRICATED::
     if(!empty($_POST['s3bubble_video_youtube_code_meta_box_text'])){
         update_post_meta($post_id, 's3bubble_video_youtube_code_meta_box_text', $_POST['s3bubble_video_youtube_code_meta_box_text']);
@@ -585,7 +668,7 @@ add_action( 'save_post', 'streamium_post_meta_box_save', 10, 3 );
  * Get the websites domain needed for connected websites
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_website_connection(){
 

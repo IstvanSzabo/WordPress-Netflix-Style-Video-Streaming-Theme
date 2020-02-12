@@ -4,7 +4,7 @@
  * Remove admin bar
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 add_filter('show_admin_bar', '__return_false');
 
@@ -12,7 +12,7 @@ add_filter('show_admin_bar', '__return_false');
  * Opens the MRSS ROKU Feed::
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_output_theme_version($admin_bar){
 
@@ -33,7 +33,7 @@ add_action('admin_bar_menu', 'streamium_output_theme_version', 100);
  * GETS TEMPLATE URL BY NAME::
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_template_url($template){
 
@@ -53,7 +53,7 @@ function streamium_get_template_url($template){
  * Opens the MRSS ROKU Feed::
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_output_mrss_feed($admin_bar){
 
@@ -112,7 +112,7 @@ add_action('admin_bar_menu', 'streamium_output_mrss_feed', 100);
  * Clears the cache
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if ( ! function_exists ( 's3bubble_cache_version' ) ) {
     function s3bubble_cache_version() {
@@ -124,7 +124,7 @@ if ( ! function_exists ( 's3bubble_cache_version' ) ) {
  * Setup the theme
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if (!function_exists('streamium_theme_setup')) {
     function streamium_theme_setup() {
@@ -202,7 +202,7 @@ if (!function_exists('streamium_theme_setup')) {
  * Add new image sizes to post or page editor
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if ( ! function_exists ( 'streamium_extra_image_sizes' ) ) {
     function streamium_extra_image_sizes($sizes){
@@ -224,7 +224,7 @@ if ( ! function_exists ( 'streamium_extra_image_sizes' ) ) {
  * Include the main js and css files
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if (!function_exists('streamium_enqueue_scripts')) {
     function streamium_enqueue_scripts() {     
@@ -294,7 +294,7 @@ if (!function_exists('streamium_enqueue_scripts')) {
  * Include the scripts for the meta boxes
  *
  * @return null
- * @author  @sameast 
+ * @author  @s3bubble 
  */
 if (!function_exists('streamium_enqueue_admin_scripts')) {
     function streamium_enqueue_admin_scripts()
@@ -319,7 +319,7 @@ if (!function_exists('streamium_enqueue_admin_scripts')) {
  * Globally set the custom post types used for the theme allow users to extend this
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_global_post_types() {
   

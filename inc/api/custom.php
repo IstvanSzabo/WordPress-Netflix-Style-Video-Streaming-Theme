@@ -4,7 +4,7 @@
  * Resume video time ajax
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function custom_api_post() {
 

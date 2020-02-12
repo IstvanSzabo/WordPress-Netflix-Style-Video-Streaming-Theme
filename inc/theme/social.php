@@ -4,7 +4,7 @@
  * Social cards Twitter and Facebook
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function social_cards(){
 

@@ -4,7 +4,7 @@
  * Dummy data admin notice
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_dummy_data_notice() {
    
@@ -25,7 +25,7 @@ add_action( 'admin_notices', 'streamium_dummy_data_notice' );
  * AJAX Dummy data admin notice
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function ajax_notice_streamium_dummy_data() {
 
@@ -41,7 +41,7 @@ add_action( 'wp_ajax_dismissed_notice_streamium_dummy_data', 'ajax_notice_stream
  * Changes the tile count
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if ( ! function_exists ( 's3bubble_tile_count' ) ) {
     
@@ -57,7 +57,7 @@ if ( ! function_exists ( 's3bubble_tile_count' ) ) {
  * Adds the main menu
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_register_menu() {
     
@@ -71,7 +71,7 @@ add_action( 'init', 'streamium_register_menu' );
  * Fix for the main menu
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_remove_ul( $menu ){
     
@@ -85,7 +85,7 @@ add_filter( 'wp_nav_menu', 'streamium_remove_ul' );
  * Webview only style for native app
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if ( ! function_exists ( 'streamium_check_webview' ) ) {
     
@@ -196,7 +196,7 @@ add_action( 'admin_init', 'streamium_check_for_active_plugins' );
  * Fix to flush urls
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 if ( ! function_exists ( 'streamium_flush_rewrite_rules' ) ) {
     
@@ -214,7 +214,7 @@ if ( ! function_exists ( 'streamium_flush_rewrite_rules' ) ) {
  * Is mobile check for theme styling
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_device($type){
 
@@ -237,7 +237,7 @@ function streamium_get_device($type){
  * appends the stramium reviews query for search
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_search_distinct() {
 	
@@ -249,7 +249,7 @@ function streamium_search_distinct() {
  * joins the stramium reviews query for search
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_search_join($join) {
     
@@ -267,7 +267,7 @@ function streamium_search_join($join) {
  * groups the stramium reviews query for search
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_search_groupby($groupby) {
     
@@ -283,7 +283,7 @@ function streamium_search_groupby($groupby) {
  * joins the stramium reviews query for search
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_search_orderby($orderby_statement) {
 	

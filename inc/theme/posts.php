@@ -4,7 +4,7 @@
  * Ajax post scipts for single post
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_single_video_scripts() {
 
@@ -102,7 +102,7 @@ add_action('wp_enqueue_scripts', 'streamium_single_video_scripts');
  * Ajax post scipts for content
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_dynamic_content() {
 
@@ -287,7 +287,7 @@ add_action( 'wp_ajax_streamium_get_dynamic_content', 'streamium_get_dynamic_cont
  * Ajax post scipts for content
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_more_content() {
 
@@ -534,7 +534,7 @@ function streamium_columns_series_video_count_content($column_name, $post_ID) {
  * Ajax remove series from list 
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_get_roku_data_code() {
 
@@ -569,7 +569,7 @@ add_action( 'wp_ajax_streamium_get_roku_data_code', 'streamium_get_roku_data_cod
  *  DRM Proxy
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function drm_protected_video_streaming_proxy_token(){
 

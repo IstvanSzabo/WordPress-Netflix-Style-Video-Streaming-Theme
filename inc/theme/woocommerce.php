@@ -4,7 +4,7 @@
  * Add woo support
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
@@ -30,7 +30,7 @@ add_action( 'woocommerce_before_my_account', 'streamium_myaccount_customer_avata
 
 /*
 * Add login logout link for Woo
-* @author sameast
+* @author @s3bubble
 * @none
 */ 
 function streamium_woo_auth_menu( $items, $args ) {
@@ -47,3 +47,13 @@ function streamium_woo_auth_menu( $items, $args ) {
 if ( !get_theme_mod( 'streamium_disable_login' ) ) {
     add_filter( 'wp_nav_menu_items', 'streamium_woo_auth_menu', 10, 2 );
 }
+
+/**
+ * Remove related products output
+ */
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+function streamium_remove_all_quantity_fields( $return, $product ) {
+    return true;
+}
+add_filter( 'woocommerce_is_sold_individually','streamium_remove_all_quantity_fields', 10, 2 );

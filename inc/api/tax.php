@@ -4,7 +4,7 @@
  * Resume video time ajax
  *
  * @return bool
- * @author  @sameast
+ * @author  @s3bubble
  */
 function tax_api_post() {
 

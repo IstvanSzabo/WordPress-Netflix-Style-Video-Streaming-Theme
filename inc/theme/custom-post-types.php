@@ -5,7 +5,7 @@
  * These can be edited and changed in the theme customizer in the dashboard
  *
  * @return null
- * @author  @sameast
+ * @author  @s3bubble
  */
 function streamium_custom_post_types() {
 
