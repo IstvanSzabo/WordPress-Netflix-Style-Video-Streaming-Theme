@@ -50,65 +50,6 @@ function streamium_get_template_url($template){
 }
 
 /**
- * Opens the MRSS ROKU Feed::
- *
- * @return null
- * @author  @s3bubble
- */
-function streamium_output_mrss_feed($admin_bar){
-
-    $rokuUrl = streamium_get_template_url('mrss.php');
-
-    if(empty($rokuUrl)){
-        
-        $rokuUrl = 'https://s3bubble.com/you-have-not-created-a-roku-or-firetv-template/';
-
-    }else{
-
-        if(get_theme_mod('streamium_mrss_key', false)){
-            
-            $rokuUrl = $rokuUrl . '?key=' . get_theme_mod('streamium_mrss_key');
-        
-        }
-    
-    }
-    
-    $fireTvUrl = streamium_get_template_url('mrss-xml.php');
-
-    $admin_bar->add_menu( array(
-        'id'    => 'mrss-feed',
-        'title' => '<span class="ab-icon dashicons dashicons-rss"></span> ' . __( 'Smart TV App Feeds', 'streamium' ),
-        'href'  => '#'
-    ));
-
-    $admin_bar->add_menu( array(
-        'parent' => 'mrss-feed',
-        'id'     => 'mrss-feed-roku',
-        'title'  => __( 'Open Roku Mrss Feed', 'streamium' ),
-        'href'   => $rokuUrl,
-        'meta'   => array('target' => '_blank')
-    ));
-
-    $admin_bar->add_menu( array(
-        'parent' => 'mrss-feed',
-        'id'     => 'mrss-feed-fire',
-        'title'  => __( 'Open Amazon FireTV Mrss Feed', 'streamium' ),
-        'href'   => $fireTvUrl,
-        'meta'   => array('target' => '_blank')
-    ));
-
-    $admin_bar->add_menu( array(
-        'parent' => 'mrss-feed',
-        'id'     => 'mrss-feed-assets',
-        'title'  => __( 'Download Example Brand Assets', 'streamium' ),
-        'href'   => 'https://s3bubble-themes.s3.amazonaws.com/RokuAssets.zip',
-        'meta'   => array('target' => '_blank')
-    ));
-
-}
-add_action('admin_bar_menu', 'streamium_output_mrss_feed', 100);
-
-/**
  * Clears the cache
  *
  * @return null
@@ -343,31 +284,6 @@ function streamium_global_post_types() {
             'tax' => 'kids',
             'type' => 'kid',
             'menu' => 'Kids'
-        ),
-        array(
-            'tax' => 'streams',
-            'type' => 'stream',
-            'menu' => 'Streams'
-        ),
-        array(
-            'tax' => 'extras1',
-            'type' => 'extra1',
-            'menu' => 'Extra1'
-        ),
-        array(
-            'tax' => 'extras2',
-            'type' => 'extra2',
-            'menu' => 'Extra2'
-        ),
-        array(
-            'tax' => 'extras3',
-            'type' => 'extra3',
-            'menu' => 'Extra3'
-        ),
-        array(
-            'tax' => 'extras4',
-            'type' => 'extra4',
-            'menu' => 'Extra4'
         )
     );
 }
