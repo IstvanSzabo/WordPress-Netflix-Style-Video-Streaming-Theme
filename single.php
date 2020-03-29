@@ -1,8 +1,11 @@
 <?php 
 
 	$type = get_post_type( ); 
+	
 	if($type === "post"){
+		
 		get_header();
+
 	}else{
 
 		// CHECK FOR WOO ASSOCIATION::
@@ -60,9 +63,13 @@
 <?php 
 
 	if($type === "post"){
+		
 		get_footer();
+
 	}else{
+		
 		get_template_part( 'footer', 'video' );
+	
 	}
 
 ?>
