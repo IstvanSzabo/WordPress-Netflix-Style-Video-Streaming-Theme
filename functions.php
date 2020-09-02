@@ -257,7 +257,7 @@ if (!function_exists('streamium_enqueue_admin_scripts')) {
         
         wp_localize_script('streamium-admin', 'streamium_meta_object', array(
             'ajax_url' => admin_url('admin-ajax.php'),
-            'api' => 'https://s3bubbleapi.com', // https://s3bubbleapi.com http://local.hosted.com leave of the trailing slash
+            'api' => 'http://local.hosted.com', // https://s3bubbleapi.com http://local.hosted.com leave of the trailing slash
             'connected_website' => (!empty($streamium_connected_website) ? $streamium_connected_website : ""),
             'connected_nonce' => $streamium_connected_nonce
         ));
