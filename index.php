@@ -13,6 +13,10 @@ if ( get_theme_mod( 'streamium_enable_splash_join_redirect', false )) {
 
 }
 
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array( 'browse' ) );
+} );
+
 get_header(); ?>
 
 	<?php 

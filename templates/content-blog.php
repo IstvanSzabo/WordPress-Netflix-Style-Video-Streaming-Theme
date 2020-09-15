@@ -1,5 +1,5 @@
 
-	<main class="cd-main-content">
+	<main class="cd-main-content streamium-page">
 		
 		<div class="container-fluid">
 			<div class="row">

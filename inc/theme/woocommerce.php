@@ -1,5 +1,23 @@
 <?php
 
+/*
+ * Redirect to checkout not cart
+ */
+add_filter( 'woocommerce_add_to_cart_redirect', 'streamium_redirect_checkout_add_cart' );
+ 
+function streamium_redirect_checkout_add_cart() {
+    return wc_get_checkout_url();
+}
+
+/*
+ * Remove add to cart notification
+ */
+add_filter( 'wc_add_to_cart_message', 'streamium_remove_add_to_cart_message' );
+
+function streamium_remove_add_to_cart_message() {
+    return;
+}
+
 /**
  * Add woo support
  *
@@ -35,10 +53,10 @@ add_action( 'woocommerce_before_my_account', 'streamium_myaccount_customer_avata
 */ 
 function streamium_woo_auth_menu( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'streamium-header-menu') {
-            $items .= '<li><a class="streamium-auth" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
+            $items .= '<li><a class="streamium-auth" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>';
     }
     elseif (!is_user_logged_in() && $args->theme_location == 'streamium-header-menu') {
-            $items .= '<li><a class="streamium-auth" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Log In</a></li>';
+            $items .= '<li><a class="streamium-auth" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>';
     }
     return $items;
 }

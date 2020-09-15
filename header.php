@@ -1,39 +1,24 @@
 <!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
 <html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
 
-	<!-- Meta Data -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width" />
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
 
-	<!-- Trackback -->
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	
-	<!-- Wordpress Scripts -->
 	<?php wp_head(); ?>
 
-	<?php
-
-		// CHECK FOR GOOGLE ADSENSE::
-		if(get_theme_mod( 'streamium_advertisement_google_adsense', false )){ ?>
-
-			<!-- GOOGE ADSENSE -->
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>
-			     (adsbygoogle = window.adsbygoogle || []).push({
-			          google_ad_client: "<?php echo get_theme_mod( 'streamium_advertisement_google_adsense' ); ?>",
-			          enable_page_level_ads: true
-			     });
-			</script>
-
-	<?php
-
-		}
-
-	?>
-
-</head> 
+</head>
 <body <?php body_class(); ?>>
 
 	<header class="cd-main-header fixed">
@@ -71,7 +56,7 @@
 
 					?>
 
-						<li class="menu-item-has-children">
+						<li class="menu-item-has-children" id="<?php echo strtolower($taxTitle); ?>-menu-item">
 						<a href="<?php echo esc_url( home_url('/') ); ?>"><?php _e( $taxTitle, 'streamium' ); ?></a>
 						<ul class="sub-menu is-hidden">
 							<li class="go-back">

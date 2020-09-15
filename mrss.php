@@ -90,19 +90,22 @@
 
         	// TOP LEVEL DATA:
         	$id               = get_the_ID();
-        	$title            = substr( strip_tags(get_the_title()), 0, 200);
-        	$shortDescription = wp_trim_words( strip_tags(get_the_content()), $num_words = 20, $more = '... ' );
-        	$longDescription  = strip_tags(get_the_content());
+        	$title            = substr( strip_tags( get_the_title() ), 0, 200);
+        	$shortDescription = wp_trim_words( strip_tags( get_the_content() ), 20, '... ' );
+        	$longDescription  = wp_trim_words( strip_tags( get_the_content() ) ) ;
         	$releaseDate      = get_the_time('c');
     	 	$thumbnail        = false;
 
     	 	// ROKU META DATA:
-    	 	$videoUrl      = get_post_meta( $post->ID, 's3bubble_roku_url_meta_box_text', true );
-    	 	$videoQuality  = get_post_meta( $post->ID, 's3bubble_roku_quality_meta_box_text', true );
-    	 	$VideoType     = get_post_meta( $post->ID, 's3bubble_roku_videotype_meta_box_text', true );
-    	 	$videoDuration = get_post_meta( $post->ID, 's3bubble_roku_duration_meta_box_text', true );
+    	 	$videoUrl      = get_post_meta( $post->ID, 'streamium_video_url_meta', true );
+    	 	$videoBif      = get_post_meta( $post->ID, 'streamium_video_bif_meta', true );
+    	 	$videoQuality  = get_post_meta( $post->ID, 'streamium_video_quality_meta', true );
+    	 	$VideoType     = get_post_meta( $post->ID, 'streamium_video_videotype_meta', true );
+    	 	$videoDuration = get_post_meta( $post->ID, 'streamium_video_duration_meta', true );
 
     	 	// EXTRA THUMBNAILS:
+    	 	$thumbnail = get_the_post_thumbnail_url( $post->ID,'streamium-roku-thumbnail' ); 
+
             if (class_exists('MultiPostThumbnails')) {                              
                 
                 if (MultiPostThumbnails::has_post_thumbnail( get_post_type( get_the_ID() ), 'roku-thumbnail-image', get_the_ID())) { 
@@ -111,10 +114,10 @@
                     $thumbnail = wp_get_attachment_image_url( $thumbnail_id, 'streamium-roku-thumbnail' ); 
 
                 }                             
-             
+              
             }; 
 
-        	$taxonomy_names = get_post_taxonomies( );
+        	$taxonomy_names = get_post_taxonomies();
         	$categories = get_the_terms( $id, $taxonomy_names[1] );
         	$genres = [];
         	$cats = [];
@@ -128,7 +131,7 @@
 	    	}    	
 
 			// CHECK IF CUSTOM POST IS A SERIES:
-			$episodes = get_post_meta(get_the_ID(), 'repeatable_fields' , true);
+			$episodes = get_post_meta(get_the_ID(), 'streamium_repeatable_series' , true);
 
 			if(!empty($episodes)){
 
@@ -138,29 +141,46 @@
 		        	$episodeObject = [];
 		        	foreach ($value as $key2 => $value2) {
 
+		        		$captions = [];
+						if(!empty($value2['episode_captions'])){
+							$captions = unserialize($getCaptions);
+						}
+
+		        		$bifs = [];
+						if(!empty($value2['episode_bif'])){
+
+							$bifs = [
+								"url"     => $value2['episode_bif'],
+			  					"quality" => "HD"
+							];
+
+						}
+
 			        	$videoData2 = [
 						  	"dateAdded" => get_the_time('c'),
 						  	"videos" => [
 								[
-								  "url"=> $value2['roku_url'],
-								  "quality"=> $value2['roku_quality'],
-								  "videoType"=> $value2['roku_type']
+								  "url"       => $value2['episode_url'],
+								  "quality"   => $value2['episode_quality'],
+								  "videoType" => $value2['episode_video_type']
 								]
 						  	],
-						  	"duration" => (int)$value2['roku_duration']
+						  	"duration"       => (int)$value2['episode_duration'],
+						  	"captions"       => $captions,
+					  		"trickPlayFiles" => $bifs
 						];
 
-			        	if($value2['thumbnails'] && $value2['roku_url'] && $value2['roku_quality'] && $value2['roku_type'] && $value2['roku_duration']){
+			        	if($value2['episode_thumb'] && $value2['episode_url'] && $value2['episode_quality'] && $value2['episode_video_type'] && $value2['episode_duration']){
  
 			        		$episodeObject[] = [
-							  	"id" => (string) $id . $value[0]['seasons'] . $value[0]['positions'] . $key2,
-							  	"title" => $value2['titles'],
-							  	"content" => $videoData2,
-							  	"thumbnail" => $value2['thumbnails'],
-							  	"episodeNumber" => (int) ($key2+1),
-							  	"releaseDate" => get_the_date('Y-m-d'),
-							  	"shortDescription" => $value2['descriptions'],
-							  	"longDescription" => $value2['descriptions']
+							  	"id"               => (string) $id . $value[0]['episode_season'] . $value[0]['episode_position'] . $key2,
+							  	"title"            => $value2['episode_title'],
+							  	"content"          => $videoData2,
+							  	"thumbnail"        => $value2['episode_thumb'],
+							  	"episodeNumber"    => (int) ($key2+1),
+							  	"releaseDate"      => get_the_date('Y-m-d'),
+							  	"shortDescription" => $value2['episode_description'],
+							  	"longDescription"  => $value2['episode_description']
 							];
 
 						}
@@ -169,22 +189,22 @@
 
 					$seasonEpisodes[] = array(
 						'seasonNumber' => (int) $key, 
-						'episodes' => $episodeObject, 
-						"thumbnail" => $thumbnail,
+						'episodes'     => $episodeObject, 
+						"thumbnail"    => $thumbnail,
 					);
 
 				}
 
 				$data = [
-				  	"id" => (string) $id,
-				  	"title" => $title,
-				  	"seasons" => $seasonEpisodes,
-				  	"genres" => $genres, 
-				    "tags" => $cats, 
-				  	"thumbnail" => $thumbnail,
-				  	"releaseDate" => get_the_date('Y-m-d'),
+				  	"id"               => (string) $id,
+				  	"title"            => $title,
+				  	"seasons"          => $seasonEpisodes,
+				  	"genres"           => $genres, 
+				    "tags"             => $cats, 
+				  	"thumbnail"        => $thumbnail,
+				  	"releaseDate"      => get_the_date('Y-m-d'),
 				    "shortDescription" => $shortDescription,
-				    "longDescription" => $longDescription
+				    "longDescription"  => $longDescription
 				];
 
 				// ONLY RETURN IF IT HAS EPISODES:
@@ -197,34 +217,44 @@
 			}else{
 
 				$captions = [];
-				$getCaptions = get_post_meta( $post->ID, 's3bubble_roku_captions_meta_box_text', true );
+				$getCaptions = get_post_meta( $post->ID, 'streamium_video_captions_meta', true );
 				if($getCaptions){
 					$captions = unserialize($getCaptions);
 				}
 
+				$bifs = [];
+				if(!empty($videoBif)){
+
+					$bifs = [
+						"url" => $videoBif,
+	  					"quality" => "HD"
+					];
+
+				}
+
 				// Not a series
 				$data = [
-	        		"id" => (string) $id,
+	        		"id"    => (string) $id,
 				    "title" => $title,
 				    "content" => [
 					  	"dateAdded" => $releaseDate,
 					  	"videos" => [
 							[
-							  "url"=> $videoUrl,
-							  "quality"=> $videoQuality,
-							  "videoType"=> $VideoType
+							  "url"       => $videoUrl,
+							  "quality"   => $videoQuality,
+							  "videoType" => $VideoType
 							]
 					  	],
-					  	"duration" => (int)$videoDuration,
-					  	"captions" => $captions,
-					  	"trickPlayFiles" => []
+					  	"duration"       => (int)$videoDuration,
+					  	"captions"       => $captions,
+					  	"trickPlayFiles" => $bifs
 					],
-				    "genres" => $genres, 
-				    "tags" => $cats, 
-				    "thumbnail" => $thumbnail,
-				    "releaseDate" => $releaseDate,
+				    "genres"           => $genres, 
+				    "tags"             => $cats, 
+				    "thumbnail"        => $thumbnail,
+				    "releaseDate"      => $releaseDate,
 				    "shortDescription" => $shortDescription,
-				    "longDescription" => $longDescription
+				    "longDescription"  => $longDescription
 	        	];
 
 				// ONLY RUN IF THE CORRECT IMAGE EXISTS:

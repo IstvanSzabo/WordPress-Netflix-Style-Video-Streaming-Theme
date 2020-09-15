@@ -93,7 +93,7 @@ function recently_watched_api_post() {
                 }
 
                 $extraMeta = "";
-                $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta_meta_box_text', true );
+                $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta', true );
                 if ( ! empty( $streamium_extra_meta ) ) {
                     $extraMeta = '<h5>' . $streamium_extra_meta . '</h5>';
                 }

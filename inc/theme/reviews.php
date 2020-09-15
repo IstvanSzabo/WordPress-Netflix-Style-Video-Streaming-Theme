@@ -161,7 +161,7 @@ function streamium_get_reviews() {
     }
 
     // Check if user is logged in
-    if ( !is_user_logged_in() ) {
+    /*if ( !is_user_logged_in() ) {
 
     	echo json_encode(
 	    	array(
@@ -172,7 +172,7 @@ function streamium_get_reviews() {
 
 	    die();
 
-    }
+    }*/
 
     if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
 

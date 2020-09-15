@@ -15,6 +15,16 @@ module.exports = function(grunt) {
                     sourceMap: true
                 },
                 src: [
+                    'node_modules/video.js/dist/video.js',
+                    'node_modules/videojs-vr/dist/videojs-vr.js',
+                    'node_modules/videojs-contrib-ads/dist/videojs.ads.js',
+                    'node_modules/videojs-ima/dist/videojs.ima.js',
+                    'node_modules/videojs-hotkeys/videojs.hotkeys.js',
+                    'dist/js/videojs-rates.js',
+                    'dist/js/videojs-airplay.js', 
+                    'dist/js/videojs-ads.js',
+                    'dist/js/videojs.bif.js',
+                    'dist/js/videojs-chromecast.js',
                     'dist/js/globals.js',
                     'dist/js/bootstrap.js',
                     'dist/js/fontawesome.js', 
@@ -25,6 +35,7 @@ module.exports = function(grunt) {
                     'dist/js/modal.js',
                     'dist/js/modernizr.js',
                     'dist/js/reviews.js',
+                    'dist/js/episodes.js',
                     'dist/js/player.js',
                     'dist/js/uploader.js',
                     'dist/js/dropdown.js',
@@ -36,6 +47,12 @@ module.exports = function(grunt) {
             },
             dist2: {
                 src: [
+                    'node_modules/video.js/dist/video-js.css',
+                    'node_modules/videojs-vr/dist/videojs-vr.css',
+                    'node_modules/videojs-contrib-ads/dist/videojs.ads.css',
+                    'node_modules/videojs-ima/dist/videojs.ima.css',
+                    'dist/css/videojs-bif.css',
+                    'dist/css/videojs-brand.css',
                     'dist/css/bootstrap.css',
                     'dist/css/info.css',
                     'dist/css/tiles.css',
@@ -44,6 +61,7 @@ module.exports = function(grunt) {
                     'dist/css/home-join.css',
                     'dist/css/modal.css',
                     'dist/css/reviews.css',
+                    'dist/css/episodes.css',
                     'dist/css/s2member.css',
                     'dist/css/uploader.css',
                     'dist/css/woocommerce.css',
@@ -54,6 +72,7 @@ module.exports = function(grunt) {
                     'dist/css/main.css',
                     'dist/css/menu.css',
                     'dist/css/mobile.css',
+                    'dist/css/footer.css',
                 ],
                 dest: 'dist/development/css/streamium.css'
             },

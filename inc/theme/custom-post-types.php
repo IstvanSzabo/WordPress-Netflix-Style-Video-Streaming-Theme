@@ -100,7 +100,7 @@ function streamium_custom_post_types() {
 			'exclude_from_search' => false,
 			'publicly_queryable'  => true,
 			'capability_type'     => 'post',
-			'menu_icon'           => 'https://s3.amazonaws.com/s3bubble-cdn/theme-images/s3bubblelogo.png',
+			'menu_icon'           => 'dashicons-video-alt3',
 			'menu_position'       => 5,
 			'taxonomies'          => array(  'post_tag', $value['tax'] ),
 			'show_in_rest'        => true,

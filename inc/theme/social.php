@@ -33,7 +33,7 @@ function social_cards(){
     if(isset($_GET['v'])){
 
         $id           = $_GET['v'];
-        $episodes     = get_post_meta(get_the_ID(), 'repeatable_fields' , true);
+        $episodes     = get_post_meta(get_the_ID(), 'streamium_repeatable_series' , true);
         $social_url   = get_permalink() . '?v=' . $id;
         $social_title = $episodes[$id]['titles'];
         $social_desc  = wp_trim_words( strip_tags($episodes[$id]['descriptions']), $num_words = 21, $more = null );

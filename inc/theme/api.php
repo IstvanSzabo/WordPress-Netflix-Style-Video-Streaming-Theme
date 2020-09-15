@@ -65,7 +65,7 @@ function streamium_api_add_series_get_field( $object, $field_name, $request ) {
 	}
 
 	// Check for series
-	$episodes = get_post_meta($id, 'repeatable_fields' , true);
+	$episodes = get_post_meta($id, 'streamium_repeatable_series' , true);
 
 	if(!empty($episodes)){
 
@@ -84,16 +84,16 @@ function streamium_api_add_series_get_field( $object, $field_name, $request ) {
 		// Order the list
 		$positions = array();
 		foreach ($episodes as $key => $row){
-		    $positions[$key] = $row['positions'];
+		    $positions[$key] = $row['episode_position'];
 		}
 		array_multisort($positions, SORT_ASC, $episodes);
 
 		// Sort the seasons
 		$result = array();
 		foreach ($episodes as $v) {
-		    $seasons = $v['seasons'];
+		    $seasons = $v['episode_season'];
 		    if (!isset($result[$seasons])) $result[$seasons] = array();
-		    $v['link'] = get_permalink($id);
+		    $v['episode_link'] = get_permalink($id);
 		    $result[$seasons][] = $v;
 		}
 
@@ -104,28 +104,31 @@ function streamium_api_add_series_get_field( $object, $field_name, $request ) {
         	foreach ($value as $key2 => $value2) {
 
 	        	$videoData2 = [
-				  	"dateAdded" => get_the_time('c'),
+				  	"date_added" => get_the_time('c'),
 				  	"videos" => [
 						[
-						  "url"=> $value2['roku_url'],
-						  "quality"=> $value2['roku_quality'],
-						  "videoType"=> $value2['roku_type']
+						  "src"       => $value2['episode_url'],
+						  "type"      => $value2['episode_type'],
+						  "bif"       => $value2['episode_bif'],
+						  "is_360"    => $value2['episode_360'],
+						  "quality"   => $value2['episode_quality'],
+						  "video_type"=> $value2['episode_video_type']
 						]
 				  	],
-				  	"duration" => (int)$value2['roku_duration']
+				  	"duration" => (int)$value2['episode_duration']
 				];
 
-	        	if($value2['thumbnails'] && $value2['roku_url'] && $value2['roku_quality'] && $value2['roku_type'] && $value2['roku_duration']){
+	        	if($value2['episode_thumb'] && $value2['episode_url'] && $value2['episode_quality'] && $value2['episode_video_type'] && $value2['episode_duration']){
 
 	        		$episodeObject[] = [
-					  	"id" => (string) $id . $value[0]['seasons'] . $value[0]['positions'] . $key2,
-					  	"episodeNumber" => (int) ($key2+1),
-					  	"title" => $value2['titles'],
-					  	"content" => $videoData2,
-					  	"thumbnail" => $value2['thumbnails'],
-					  	"releaseDate" => get_the_date('Y-m-d'),
-					  	"shortDescription" => $value2['descriptions'],
-					  	"longDescription" => $value2['descriptions']
+					  	"id"               => (string) $id . $value[0]['episode_season'] . $value[0]['episode_position'] . $key2,
+					  	"episode_number"    => (int) ($key2+1),
+					  	"title"            => $value2['episode_title'],
+					  	"content"          => $videoData2,
+					  	"thumbnail"        => $value2['episode_thumb'],
+					  	"release_date"      => get_the_date('Y-m-d'),
+					  	"short_description" => $value2['episode_description'],
+					  	"long_description"  => $value2['episode_description']
 					];
 
 				}
@@ -133,7 +136,7 @@ function streamium_api_add_series_get_field( $object, $field_name, $request ) {
         	}
 
 			$seasonEpisodes[] = array(
-				'seasonNumber' => (int) $key, 
+				'season_number' => (int) $key, 
 				'episodes' => $episodeObject, 
 				"thumbnail" => $thumbnail,
 			);
@@ -216,10 +219,17 @@ function streamium_api_add_media_get_field( $object, $field_name, $request ) {
 	}
 
 	// BUILD:
-	$media['url'] = get_post_meta( $postId, 's3bubble_roku_url_meta_box_text', true );
-	$media['quality'] = get_post_meta( $postId, 's3bubble_roku_quality_meta_box_text', true );
-	$media['videotype'] = get_post_meta( $postId, 's3bubble_roku_videotype_meta_box_text', true );
-	$media['duration'] = get_post_meta( $postId, 's3bubble_roku_duration_meta_box_text', true );
+	$media['src']      = get_post_meta( $postId, 'streamium_video_url_meta', true );
+	$media['type']     = get_post_meta( $postId, 'streamium_video_type_meta', true );
+	$media['bif']      = get_post_meta( $postId, 'streamium_video_bif_meta', true );
+	$media['duration'] = get_post_meta( $postId, 'streamium_video_duration_meta', true );
+	$media['is_360']   = get_post_meta( $postId, 'streamium_video_360_meta', true );
+ 
+	$media['captions'] = [];
+	$getCaptions = get_post_meta( $postId, 'streamium_video_captions_meta', true );
+	if($getCaptions){
+		$media['captions'] = unserialize($getCaptions);
+	}
 
 	return apply_filters( 'streamium_api_media', $media, $postId );
 
@@ -416,7 +426,7 @@ function streamium_api_add_extra_meta_get_field( $object, $field_name, $request 
 	}
 
 	$extraMeta = "";
-    $streamium_extra_meta = get_post_meta( $postId, 'streamium_extra_meta_meta_box_text', true );
+    $streamium_extra_meta = get_post_meta( $postId, 'streamium_extra_meta', true );
     if ( ! empty( $streamium_extra_meta ) ) {
         $extraMeta = '<h5>' . $streamium_extra_meta . '</h5>';
     }
