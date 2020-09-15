@@ -149,11 +149,6 @@ function sb_register_required_plugins() {
             'name'      => 'WooCommerce',
             'slug'      => 'woocommerce',
             'required'  => false,
-        ),
-        array(
-            'name'      => 'Loco Translate',
-            'slug'      => 'loco-translate',
-            'required'  => false,
         )
     );
 
