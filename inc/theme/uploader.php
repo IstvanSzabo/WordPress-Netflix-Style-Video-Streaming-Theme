@@ -4,7 +4,7 @@
  * Direct aws uploader
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_user_content_uploader($atts){
     
@@ -110,7 +110,7 @@ add_shortcode( 'streamium_uploader', 'streamium_user_content_uploader' );
  * notify user whe upload takes place
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_user_content_uploader_email(){
 

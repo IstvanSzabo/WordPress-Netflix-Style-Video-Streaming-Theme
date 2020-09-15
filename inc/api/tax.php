@@ -4,7 +4,7 @@
  * Resume video time ajax
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function tax_api_post() {
 
@@ -33,11 +33,15 @@ function tax_api_post() {
             remove_all_filters('posts_join');
             remove_all_filters('posts_groupby');
             remove_all_filters('posts_orderby');
-
+            add_filter( 'posts_fields', 'streamium_search_distinct' );
+            add_filter( 'posts_join','streamium_search_join');
+            add_filter( 'posts_groupby', 'streamium_search_groupby' );
+            add_filter( 'posts_orderby', 'streamium_search_orderby' );
             $loop = new WP_Query( 
                 array(
                     'posts_per_page'   => -1,
                     'post_status' => 'publish',
+                    //'ignore_sticky_posts' => true,
                     'tax_query' => array(
                         array(
                             'taxonomy'  => $tax,
@@ -45,7 +49,8 @@ function tax_api_post() {
                             'terms'     => $term_id,
                         )
                     ),
-                    'orderby' => 'comment_count',
+                    'orderby' => 'date',
+                    'order'   => 'DESC', 
                 ) 
             );
 
@@ -187,7 +192,7 @@ function tax_api_post() {
             $progressBar = get_post_meta( get_the_ID(), 'user_' . $userId, true );
 
             $extraMeta = "";
-            $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta', true );
+            $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta_meta_box_text', true );
             if ( ! empty( $streamium_extra_meta ) ) {
                 $extraMeta = '<h5>' . $streamium_extra_meta . '</h5>';
             }

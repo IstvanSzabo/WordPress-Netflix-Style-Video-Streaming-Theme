@@ -1,28 +1,10 @@
 <?php
 
-/*
- * Redirect to checkout not cart
- */
-add_filter( 'woocommerce_add_to_cart_redirect', 'streamium_redirect_checkout_add_cart' );
- 
-function streamium_redirect_checkout_add_cart() {
-    return wc_get_checkout_url();
-}
-
-/*
- * Remove add to cart notification
- */
-add_filter( 'wc_add_to_cart_message', 'streamium_remove_add_to_cart_message' );
-
-function streamium_remove_add_to_cart_message() {
-    return;
-}
-
 /**
  * Add woo support
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
@@ -48,15 +30,15 @@ add_action( 'woocommerce_before_my_account', 'streamium_myaccount_customer_avata
 
 /*
 * Add login logout link for Woo
-* @author @s3bubble
+* @author sameast
 * @none
 */ 
 function streamium_woo_auth_menu( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'streamium-header-menu') {
-            $items .= '<li><a class="streamium-auth" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>';
+            $items .= '<li><a class="streamium-auth" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
     }
     elseif (!is_user_logged_in() && $args->theme_location == 'streamium-header-menu') {
-            $items .= '<li><a class="streamium-auth" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>';
+            $items .= '<li><a class="streamium-auth" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Log In</a></li>';
     }
     return $items;
 }
@@ -65,13 +47,3 @@ function streamium_woo_auth_menu( $items, $args ) {
 if ( !get_theme_mod( 'streamium_disable_login' ) ) {
     add_filter( 'wp_nav_menu_items', 'streamium_woo_auth_menu', 10, 2 );
 }
-
-/**
- * Remove related products output
- */
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-
-function streamium_remove_all_quantity_fields( $return, $product ) {
-    return true;
-}
-add_filter( 'woocommerce_is_sold_individually','streamium_remove_all_quantity_fields', 10, 2 );

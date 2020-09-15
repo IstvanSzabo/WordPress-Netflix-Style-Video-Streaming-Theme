@@ -4,7 +4,7 @@
  * Change the menu text
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_comments_to_reviews( $translated_text, $untranslated_text, $domain )
 {       
@@ -22,7 +22,7 @@ is_admin() && add_filter( 'gettext', 'streamium_comments_to_reviews', 99, 3 );
  * Add new column to the table
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_comment_columns( $columns ){
 	
@@ -47,7 +47,7 @@ add_filter( 'manage_comments_custom_column', 'streamium_comment_column', 10, 2 )
  * Streamium rating ajax
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_likes() {
 
@@ -147,7 +147,7 @@ add_action( 'wp_ajax_streamium_likes', 'streamium_likes' );
  * Ajax sidebar get reviews
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_get_reviews() {
 
@@ -161,7 +161,7 @@ function streamium_get_reviews() {
     }
 
     // Check if user is logged in
-    /*if ( !is_user_logged_in() ) {
+    if ( !is_user_logged_in() ) {
 
     	echo json_encode(
 	    	array(
@@ -172,7 +172,7 @@ function streamium_get_reviews() {
 
 	    die();
 
-    }*/
+    }
 
     if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
 
@@ -234,7 +234,7 @@ add_action( 'wp_ajax_streamium_get_reviews', 'streamium_get_reviews' );
  * Get like count for post
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function get_streamium_likes($post_id) {
 

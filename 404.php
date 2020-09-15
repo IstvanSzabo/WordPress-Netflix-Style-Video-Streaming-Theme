@@ -12,7 +12,7 @@
 				</div>
 			</div>
 		</div>
- 
+
 	</main><!--/.main content-->
 	
  <?php get_footer(); ?>

@@ -4,7 +4,7 @@
  * Resume video time ajax
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function search_api_post() {
 
@@ -33,9 +33,9 @@ function search_api_post() {
         if($_REQUEST['search']['date'] === 'day'){
 
             $loop = new WP_Query(array(
-                'post_type'      => streamium_global_meta(),
-                'posts_per_page' => -1,
-                'post_status'    => 'publish',
+                'post_type' => streamium_global_meta(),
+                'posts_per_page'   => -1,
+                'post_status' => 'publish',
                 'date_query' => array(
                      array(
                         'after' => '1 day ago'
@@ -47,10 +47,10 @@ function search_api_post() {
         }else if($date === 'week'){
 
             $loop = new WP_Query(array(
-                'post_type'      => streamium_global_meta(),
-                'posts_per_page' => -1,
-                'post_status'    => 'publish',
-                'date_query'     => array(
+                'post_type' => streamium_global_meta(),
+                'posts_per_page'   => -1,
+                'post_status' => 'publish',
+                'date_query' => array(
                      array(
                         'after' => '1 week ago'
                      ),
@@ -68,9 +68,9 @@ function search_api_post() {
                 $day   = $date[2];
                 $loop = new WP_Query(array(
                     'post_type' => streamium_global_meta(),
-                    'posts_per_page' => -1,
-                    'post_status'    => 'publish',
-                    'date_query'     => array(
+                    'posts_per_page'   => -1,
+                    'post_status' => 'publish',
+                    'date_query' => array(
                         array(
                           'year' => $year,
                           'month' => $month,
@@ -83,9 +83,9 @@ function search_api_post() {
             }else{
 
                 $loop = new WP_Query(array(
-                    'post_type'      => streamium_global_meta(),
-                    'posts_per_page' => -1,
-                    'post_status'    => 'publish',
+                    'post_type' => streamium_global_meta(),
+                    'posts_per_page'   => -1,
+                    'post_status' => 'publish',
                     'date_query' => array(
                         array(
                           'year' => $date
@@ -101,9 +101,9 @@ function search_api_post() {
 
         $s = sanitize_text_field($_REQUEST['search']['s']);
         $loop = new WP_Query(array(
-            'post_type'      => streamium_global_meta(), 
-            'posts_per_page' => -1,
-            'post_status'    => 'publish',
+            'post_type' => streamium_global_meta(), 
+            'posts_per_page'   => -1,
+            'post_status' => 'publish',
             's' => $s
         )); 
 
@@ -173,7 +173,7 @@ function search_api_post() {
             $progressBar = get_post_meta( get_the_ID(), 'user_' . $userId, true );
 
             $extraMeta = "";
-            $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta', true );
+            $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta_meta_box_text', true );
             if ( ! empty( $streamium_extra_meta ) ) {
                 $extraMeta = '<h5>' . $streamium_extra_meta . '</h5>';
             }

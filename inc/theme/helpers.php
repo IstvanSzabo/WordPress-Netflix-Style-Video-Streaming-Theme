@@ -1,10 +1,47 @@
-<?php  
+<?php
+
+/**
+ * Dummy data admin notice
+ *
+ * @return null
+ * @author  @sameast
+ */
+function streamium_dummy_data_notice() {
+   
+        if ( ! get_option('dismissed-streamium_dummy_data', FALSE ) ) { ?>
+            <div class="updated notice notice-streamium-dummy-data is-dismissible" data-notice="streamium_dummy_data">
+                <p>NEED HELP? Why not get started with some dummy data download below (Right Click And Save Link As) if needed. You can import the xml file in the tools menu -> import then Run Importer.</p> 
+                <p>
+                    <a class="button button-primary" href="https://s3b-assets-bucket.s3.amazonaws.com/animals.WordPress.2019-12-09.xml" target="_blank">Dummy Data</a>
+                </p>
+            </div>
+        <?php }
+    
+}
+
+add_action( 'admin_notices', 'streamium_dummy_data_notice' );
+
+/**
+ * AJAX Dummy data admin notice
+ *
+ * @return null
+ * @author  @sameast
+ */
+function ajax_notice_streamium_dummy_data() {
+
+    $type = $_POST['type'];
+    update_option( 'dismissed-' . $type, TRUE );
+
+}
+
+add_action( 'wp_ajax_dismissed_notice_streamium_dummy_data', 'ajax_notice_streamium_dummy_data' );
+  
 
 /**
  * Changes the tile count
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if ( ! function_exists ( 's3bubble_tile_count' ) ) {
     
@@ -20,12 +57,11 @@ if ( ! function_exists ( 's3bubble_tile_count' ) ) {
  * Adds the main menu
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_register_menu() {
     
     register_nav_menu('streamium-header-menu',__( 'Header Menu', 'streamium' ));
-    register_nav_menu('streamium-footer-menu',__( 'Footer Menu', 'streamium' ));
 
 }
 
@@ -35,7 +71,7 @@ add_action( 'init', 'streamium_register_menu' );
  * Fix for the main menu
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_remove_ul( $menu ){
     
@@ -49,7 +85,7 @@ add_filter( 'wp_nav_menu', 'streamium_remove_ul' );
  * Webview only style for native app
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if ( ! function_exists ( 'streamium_check_webview' ) ) {
     
@@ -73,11 +109,94 @@ if ( ! function_exists ( 'streamium_check_webview' ) ) {
 
 }
 
+/*
+* Recommended plugins managment and notifications
+* @author sameast
+* @none
+*/
+require_once get_template_directory() . '/inc/recommended-plugins/class-tgm-plugin-activation.php';
+add_action( 'tgmpa_register', 'sb_register_required_plugins' );
+
+function sb_register_required_plugins() {
+    
+    $plugins = array(
+        array(
+            'name'      => 'Easy Theme and Plugin Upgrades',
+            'slug'      => 'easy-theme-and-plugin-upgrades',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'WP Extended Search',
+            'slug'      => 'wp-extended-search',
+            'required'  => false,
+  	    ),
+        array(
+            'name'      => 'Post Types Order',
+            'slug'      => 'post-types-order',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'Category Order and Taxonomy Terms Order',
+            'slug'      => 'taxonomy-terms-order',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'Force Regenerate Thumbnails',
+            'slug'      => 'force-regenerate-thumbnails',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'WooCommerce',
+            'slug'      => 'woocommerce',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'Loco Translate',
+            'slug'      => 'loco-translate',
+            'required'  => false,
+        )
+    );
+
+    $config = array(
+      'id'           => 's3bubble',
+      'default_path' => '',
+      'menu'         => 'tgmpa-install-plugins',
+      'parent_slug'  => 'themes.php',
+      'capability'   => 'edit_theme_options',
+      'has_notices'  => true,
+      'dismissable'  => true,
+      'dismiss_msg'  => '',
+      'is_automatic' => false
+    );
+
+    tgmpa( $plugins, $config );
+
+}
+
+/**
+ * Make sure the self hosted plugin is not installed
+ */
+function streamium_check_for_active_plugins() {
+
+  function streamium_check_plugin_isnot_active_notice__error() {
+
+      $class = 'notice notice-error notice-demo-data';
+      $message = __( '!IMPORTANT you have the S3Bubble self hosted plugin installed this is not needed with this theme all functionality is built in please remove the S3Bubble AWS Self Hosted Plugin', 'streamium' );
+
+      printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ));
+  }
+  if ( is_plugin_active( 's3bubble-amazon-web-services-oembed-media-streaming-support/s3bubble-oembed.php' ) ) {
+    add_action( 'admin_notices', 'streamium_check_plugin_isnot_active_notice__error' );
+  }
+
+}
+add_action( 'admin_init', 'streamium_check_for_active_plugins' );
+
 /**
  * Fix to flush urls
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if ( ! function_exists ( 'streamium_flush_rewrite_rules' ) ) {
     
@@ -95,7 +214,7 @@ if ( ! function_exists ( 'streamium_flush_rewrite_rules' ) ) {
  * Is mobile check for theme styling
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_get_device($type){
 
@@ -118,7 +237,7 @@ function streamium_get_device($type){
  * appends the stramium reviews query for search
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_search_distinct() {
 	
@@ -130,7 +249,7 @@ function streamium_search_distinct() {
  * joins the stramium reviews query for search
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_search_join($join) {
     
@@ -148,7 +267,7 @@ function streamium_search_join($join) {
  * groups the stramium reviews query for search
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_search_groupby($groupby) {
     
@@ -164,7 +283,7 @@ function streamium_search_groupby($groupby) {
  * joins the stramium reviews query for search
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_search_orderby($orderby_statement) {
 	
@@ -237,9 +356,9 @@ function streamGroupSeasons($array, $key) {
  * @param int $p
  * @return multitype:multitype:
  */
-function orderCodes($post_id) {
+function orderCodes($postId) {
 
-  $episodes = get_post_meta($post_id, 'streamium_repeatable_series' , true);
+  $episodes = get_post_meta($postId, 'repeatable_fields' , true);
 
   if(empty($episodes)){
     return false;
@@ -315,7 +434,7 @@ function streamium_body_class( $classes ) {
     return $classes;
     
 }
-//add_action( 'body_class', 'streamium_body_class');
+add_action( 'body_class', 'streamium_body_class');
 
 /**
  *
@@ -363,7 +482,7 @@ function streamium_sort_episodes($episodes){
     
         if (!isset($response[$seasons])) $response[$seasons] = array();
     
-        //$v['link'] = get_permalink($post_id);
+        //$v['link'] = get_permalink($postId);
     
         $response[$seasons][] = $v;
 
@@ -371,55 +490,4 @@ function streamium_sort_episodes($episodes){
     
     return $response;
     
-}
-
-/**
- *
- * @param Updated wordpress trim function
- * @param int $p
- * @return filter
- */
-function streamium_trim_words( $text, $num_words = 55, $more = null ) {
-    if ( null === $more ) {
-        $more = __( '&hellip;' );
-    }
- 
-    $original_text = $text;
-    $text          = wp_strip_all_tags( $text );
-    $num_words     = (int) $num_words;
- 
-    /*
-     * translators: If your word count is based on single characters (e.g. East Asian characters),
-     * enter 'characters_excluding_spaces' or 'characters_including_spaces'. Otherwise, enter 'words'.
-     * Do not translate into your own language.
-     */
-    if ( strpos( _x( 'words', 'Word count type. Do not translate!' ), 'characters' ) === 0 && preg_match( '/^utf\-?8$/i', get_option( 'blog_charset' ) ) ) {
-        $text = trim( preg_replace( "/[\n\r\t ]+/", ' ', $text ), ' ' );
-        preg_match_all( '/./u', $text, $words_array );
-        $words_array = array_slice( $words_array[0], 0, $num_words + 1 );
-        $sep         = '';
-    } else {
-        $words_array = preg_split( "/[\n\r\t ]+/", $text, $num_words + 1, PREG_SPLIT_NO_EMPTY );
-        $sep         = ' ';
-    }
- 
-    if ( count( $words_array ) > $num_words ) {
-        array_pop( $words_array );
-        $text = implode( $sep, $words_array );
-        $text = $text . $more;
-    } else {
-        $text = implode( $sep, $words_array ) . $more;
-    }
- 
-    /**
-     * Filters the text content after words have been trimmed.
-     *
-     * @since 3.3.0
-     *
-     * @param string $text          The trimmed text.
-     * @param int    $num_words     The number of words to trim the text to. Default 55.
-     * @param string $more          An optional string to append to the end of the trimmed text, e.g. &hellip;.
-     * @param string $original_text The text before it was trimmed.
-     */
-    return apply_filters( 'streamium_trim_words', $text, $num_words, $more, $original_text );
 }

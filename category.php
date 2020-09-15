@@ -34,11 +34,10 @@
 						$total_count = $the_query->post_count;
 
 						while ( $the_query->have_posts() ) : $the_query->the_post(); 
-
-						$image         = wp_get_attachment_image_src( get_post_thumbnail_id(), 'streamium-video-tile' );
-						$imageExpanded = wp_get_attachment_image_src( get_post_thumbnail_id(), 'streamium-video-tile-expanded' );
-						$nonce         = wp_create_nonce( 'streamium_likes_nonce' );
-						$trimexcerpt   = !empty(get_the_excerpt()) ? get_the_excerpt() : get_the_content(); 
+						$image  = wp_get_attachment_image_src( get_post_thumbnail_id(), 'streamium-video-tile' );
+						$imageExpanded   = wp_get_attachment_image_src( get_post_thumbnail_id(), 'streamium-video-tile-expanded' );
+						$nonce = wp_create_nonce( 'streamium_likes_nonce' );
+						$trimexcerpt = !empty(get_the_excerpt()) ? get_the_excerpt() : get_the_content(); 
 
 						?>
 						<div class="col-md-2 col-xs-6 tile" data-id="<?php the_ID(); ?>" data-nonce="<?php echo $nonce; ?>" data-cat="static-<?php echo $cat_count; ?>">
@@ -96,6 +95,7 @@
 									        	</span>
 								        	</div>
 							        	</a>
+							        	<a href="#" class="synopis-video-trailer streamium-btns hidden-xs">Watch Trailer</a>
 							        	<a href="#" class="s3bubble-details-inner-close"><i class="fa fa-times" aria-hidden="true"></i></a>
 									</div><!--/.col-sm-12-->
 								</div><!--/.row-->

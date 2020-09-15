@@ -116,7 +116,7 @@ add_action( 'synopis_multi_meta', 'synopis_multi_meta_genre', 2, 0 );
 function synopis_multi_meta_release(){
 
 	// Release date
-	$streamiumOverrideReleaseDate = get_post_meta( get_the_ID(), 'streamium_release_date', true );
+	$streamiumOverrideReleaseDate = get_post_meta( get_the_ID(), 'streamium_release_date_meta_box_text', true );
 	if(!empty($streamiumOverrideReleaseDate)){
 		echo '<li class="synopis-meta-spacer">' . __( 'Released', 'streamium' ) . ': ' . $streamiumOverrideReleaseDate . '</li>';
 	}else{
@@ -129,7 +129,7 @@ add_action( 'synopis_multi_meta', 'synopis_multi_meta_release', 3, 0 );
 
 function synopis_multi_meta_rating( ) {
    
-	$rating  = get_post_meta(get_the_ID(), 'streamium_ratings', true);
+	$rating  = get_post_meta(get_the_ID(), 'streamium_ratings_meta_box_text', true);
 	if ($rating) {
 	    echo '<li class="synopis-meta-spacer">' . __( 'Rating', 'streamium' ) . ': ' . $rating . '</li>';
 	}
@@ -143,7 +143,7 @@ function synopis_video_progressbar(){
 	if(is_user_logged_in()) {
 		$userId = get_current_user_id();
     	$percentageWatched = get_post_meta( get_the_ID(), 'user_' . $userId, true );
-		$episodes = get_post_meta(get_the_ID(), 'streamium_repeatable_series' , true);
+		$episodes = get_post_meta(get_the_ID(), 'repeatable_fields' , true);
 		if(!empty($episodes) || get_post_type( get_the_ID() ) == 'stream') {
 
 			
@@ -196,7 +196,7 @@ add_action( 'streamium_video_payment', 'streamium_video_payment_callback', 0, 0 
 
 function streamium_video_extra_meta_callback(){
 
-	$streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta', true );
+	$streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta_meta_box_text', true );
 	if ( ! empty( $streamium_extra_meta ) ) {
 	    echo '<div class="streamium-extra-meta"><h5>' . $streamium_extra_meta . '</h5></div>';
 	}

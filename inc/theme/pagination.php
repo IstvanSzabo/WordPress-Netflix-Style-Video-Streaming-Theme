@@ -4,7 +4,7 @@
  * Adds a pagination plugin for multiple videos
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function streamium_pagination($pages = '', $range = 4){
 

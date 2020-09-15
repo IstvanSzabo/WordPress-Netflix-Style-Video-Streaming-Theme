@@ -4,7 +4,7 @@
  * Resume video time ajax
  *
  * @return bool
- * @author  @s3bubble
+ * @author  @sameast
  */
 function home_api_post() {
 
@@ -145,7 +145,7 @@ function home_api_post() {
                 $progressBar = get_post_meta( get_the_ID(), 'user_' . $userId, true );
 
                 $extraMeta = "";
-                $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta', true );
+                $streamium_extra_meta = get_post_meta( get_the_ID(), 'streamium_extra_meta_meta_box_text', true );
                 if ( ! empty( $streamium_extra_meta ) ) {
                     $extraMeta = '<h5>' . $streamium_extra_meta . '</h5>';
                 }

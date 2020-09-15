@@ -74,10 +74,10 @@
             }; 
 
     	 	// ROKU META DATA:
-    	 	$videoUrl      = get_post_meta( $post->ID, 'streamium_video_url_meta', true );
-    	 	$videoQuality  = get_post_meta( $post->ID, 'streamium_video_quality_meta', true );
-    	 	$VideoType     = get_post_meta( $post->ID, 'streamium_video_videotype_meta', true );
-    	 	$videoDuration = get_post_meta( $post->ID, 'streamium_video_duration_meta', true );
+    	 	$videoUrl      = get_post_meta( $post->ID, 's3bubble_roku_url_meta_box_text', true );
+    	 	$videoQuality  = get_post_meta( $post->ID, 's3bubble_roku_quality_meta_box_text', true );
+    	 	$VideoType     = get_post_meta( $post->ID, 's3bubble_roku_videotype_meta_box_text', true );
+    	 	$videoDuration = get_post_meta( $post->ID, 's3bubble_roku_duration_meta_box_text', true );
 
     	 	if($thumbnail && $videoUrl && $videoQuality && $VideoType && $videoDuration){
 

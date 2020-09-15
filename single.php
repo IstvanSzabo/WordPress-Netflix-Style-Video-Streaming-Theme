@@ -1,38 +1,10 @@
 <?php 
-	
-	$type = get_post_type(); 
 
+	$type = get_post_type( ); 
 	if($type === "post"){
-		
 		get_header();
-
 	}else{
-
-		// CHECK FOR WOO ASSOCIATION::
-		if ( class_exists( 'WooCommerce' ) ) {
-
-			$productId = get_post_meta( get_the_ID(), 'streamium_premium_meta_box_woo_product', true );
-
-			if(!empty( $productId )){
-			
-				$current_user = wp_get_current_user();
-			
-				if( !wc_customer_bought_product( $current_user->user_email, $current_user->ID, $productId ) ){
-			
-					$url = get_permalink( $productId );
-			
-					wp_redirect( $url );
-			
-					exit;
-			
-				}
-			
-			}
-
-		}
-
 		get_template_part( 'header', 'video' );
-
 	}
 
 ?>
